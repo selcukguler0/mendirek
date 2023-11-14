@@ -336,7 +336,7 @@
                                         </div>
                                         <div class="Box-content" style="margin-top: 20px;">
                                             <div class="Carousel-wrapper" style="padding: 0 70px;position: relative;">
-                                                <div class="swiper mySwiper-Populer" style="height: fit-content;">
+                                                <div class="swiper mySwiper-TopSales" style="height: fit-content;">
                                                     <div class="swiper-wrapper">
                                                         <?php for ($i = 30; $i < 44; $i++) : ?>
                                                             <div class="swiper-slide">
@@ -350,8 +350,8 @@
 
                                                 </div>
 
-                                                <div class="swiper-button-next swiper-button-next-populer" style="margin-bottom: 20px;"></div>
-                                                <div class="swiper-button-prev swiper-button-prev-populer"></div>
+                                                <div class="swiper-button-next swiper-button-next-TopSales" style="margin-bottom: 20px;"></div>
+                                                <div class="swiper-button-prev swiper-button-prev-TopSales"></div>
                                             </div>
                                         </div>
                                         <!-- 
@@ -445,6 +445,36 @@
             navigation: {
                 nextEl: ".swiper-button-next-populer",
                 prevEl: ".swiper-button-prev-populer",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        new Swiper(".mySwiper-TopSales", {
+            grabCursor: false,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination-TopSales",
+                clickable: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-TopSales",
+                prevEl: ".swiper-button-prev-TopSales",
             },
             breakpoints: {
                 640: {
