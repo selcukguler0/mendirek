@@ -1,11 +1,32 @@
 .swiper-slide .bookname {
+  margin-top: 5px;
   text-align: center;
 }
 .swiper-slide .author {
   text-align: center;
   color: gray;
-  font-size: 14px;
-  margin-top: -10px;
+  font-size: 13px;
+  margin-top: -15px;
+}
+.swiper-slide .price {
+  text-align: center;
+  color: #ef6a2f;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-color: #ef6a2f;
+  top: var(--swiper-navigation-top-offset, 31%)!important;
+  color: #ef6a2f;
+}
+.swiper-button-next-mainSwiper, .swiper-button-prev-mainSwiper {
+  top: var(--swiper-navigation-top-offset, 50%)!important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 22px!important;
 }
 
 .hakkimizda {
@@ -22,10 +43,8 @@
   font-size: 20px;
 }
 
-
-@media screen and (max-width:728px) {
+@media screen and (max-width: 728px) {
   .hakkimizda .wrapper {
     max-width: 80%;
   }
-    
 }

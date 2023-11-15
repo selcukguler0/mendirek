@@ -322,3 +322,257 @@ in APPPATH\Views\home.php on line 1345.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:40:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#8 {main}
+CRITICAL - 2023-11-14 15:40:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:41:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1 in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('YOUR QUERY HERE', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+CRITICAL - 2023-11-14 15:41:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:41:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1 in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('YOUR QUERY HERE', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+CRITICAL - 2023-11-14 15:41:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:41:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1 in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('YOUR QUERY HERE', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+CRITICAL - 2023-11-14 15:41:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:41:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1 in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('YOUR QUERY HERE', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+CRITICAL - 2023-11-14 15:41:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:41:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mendirek', 3306, '', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#8 {main}
+CRITICAL - 2023-11-14 15:41:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:41:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mendirek', 3306, '', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#8 {main}
+CRITICAL - 2023-11-14 15:41:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+ERROR - 2023-11-14 15:42:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1 in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('YOUR QUERY HERE', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#9 {main}
+CRITICAL - 2023-11-14 15:42:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YOUR QUERY HERE' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-14 15:42:41 --> Cannot use object of type stdClass as array
+in APPPATH\Views\home.php on line 269.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-14 15:42:57 --> Array to string conversion
+in APPPATH\Controllers\Home.php on line 14.
+ 1 APPPATH\Controllers\Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Home.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-14 15:43:25 --> Cannot use object of type stdClass as array
+in APPPATH\Views\home.php on line 269.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(17): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-14 15:44:02 --> Cannot use object of type stdClass as array
+in APPPATH\Views\home.php on line 301.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(18): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-14 15:44:47 --> Cannot use object of type stdClass as array
+in APPPATH\Views\home.php on line 303.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(18): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
