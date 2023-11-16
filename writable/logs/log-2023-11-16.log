@@ -1,0 +1,1093 @@
+CRITICAL - 2023-11-16 07:04:14 --> Undefined variable $title
+in APPPATH\Views\layouts\head.php on line 2.
+ 1 APPPATH\Views\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/layouts/head', [], true)
+ 5 APPPATH\Views\admin\login.php(4): view('/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\login.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/login', [], true)
+ 9 APPPATH\Controllers\Admin.php(20): view('admin/login')
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 07:04:15 --> Undefined variable $title
+in APPPATH\Views\layouts\head.php on line 2.
+ 1 APPPATH\Views\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/layouts/head', [], true)
+ 5 APPPATH\Views\admin\login.php(4): view('/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\login.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/login', [], true)
+ 9 APPPATH\Controllers\Admin.php(20): view('admin/login')
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 07:04:28 --> Undefined variable $title
+in APPPATH\Views\layouts\head.php on line 2.
+ 1 APPPATH\Views\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/layouts/head', [], true)
+ 5 APPPATH\Views\admin\login.php(4): view('/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\login.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/login', [], true)
+ 9 APPPATH\Controllers\Admin.php(20): view('admin/login')
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 07:31:55 --> Undefined variable $title
+in APPPATH\Views\admin\layouts\head.php on line 2.
+ 1 APPPATH\Views\admin\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/layouts/head', [], true)
+ 5 APPPATH\Views\admin\home.php(4): view('/admin/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 9 APPPATH\Controllers\Admin.php(15): view('admin/home')
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 07:32:14 --> Undefined variable $title
+in APPPATH\Views\admin\layouts\head.php on line 2.
+ 1 APPPATH\Views\admin\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/layouts/head', [], true)
+ 5 APPPATH\Views\admin\home.php(4): view('/admin/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 9 APPPATH\Controllers\Admin.php(16): view('admin/home')
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 07:45:22 --> Array to string conversion
+in APPPATH\Views\admin\home.php on line 15.
+ 1 APPPATH\Views\admin\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(18): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:16:59 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:18 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:19 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:19 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:20 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:20 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:24 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:25 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:33 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:33 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:34 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:34 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:17:34 --> Undefined variable $books
+in APPPATH\Views\admin\home.php on line 27.
+ 1 APPPATH\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:21:02 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:21:10 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:21:11 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:21:11 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:21:12 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:21:19 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:22:07 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:22:09 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 08:22:16 --> Undefined array key "name"
+in APPPATH\Views\admin\editbook.php on line 12.
+ 1 APPPATH\Views\admin\editbook.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 09:17:24 --> CSRF token verified.
+INFO - 2023-11-16 09:19:32 --> CSRF token verified.
+CRITICAL - 2023-11-16 09:19:32 --> App\Controllers\Admin::editbook_post(): Return value must be of type string, null returned
+in APPPATH\Controllers\Admin.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook_post()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 09:19:44 --> CSRF token verified.
+INFO - 2023-11-16 09:24:33 --> CSRF token verified.
+INFO - 2023-11-16 09:25:38 --> CSRF token verified.
+INFO - 2023-11-16 09:30:25 --> CSRF token verified.
+CRITICAL - 2023-11-16 09:30:25 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Admin.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook_post()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 09:30:57 --> CSRF token verified.
+CRITICAL - 2023-11-16 09:30:57 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Admin.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook_post()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 09:33:03 --> CSRF token verified.
+INFO - 2023-11-16 09:33:22 --> CSRF token verified.
+INFO - 2023-11-16 09:36:23 --> CSRF token verified.
+INFO - 2023-11-16 09:37:38 --> CSRF token verified.
+INFO - 2023-11-16 09:37:51 --> CSRF token verified.
+CRITICAL - 2023-11-16 09:37:51 --> finfo_file(C:\xampp\tmp\phpD93A.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 117.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpD93A.tmp): Failed to open stream: No such file or directory', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\system\\Files\\File.php', 117)
+ 2 SYSTEMPATH\Files\File.php(117): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpD93A.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(320): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(309): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 APPPATH\Controllers\Admin.php(46): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook_post()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 09:38:30 --> CSRF token verified.
+INFO - 2023-11-16 09:39:56 --> CSRF token verified.
+INFO - 2023-11-16 09:40:58 --> CSRF token verified.
+INFO - 2023-11-16 09:45:14 --> CSRF token verified.
+INFO - 2023-11-16 09:45:40 --> CSRF token verified.
+INFO - 2023-11-16 09:47:30 --> CSRF token verified.
+INFO - 2023-11-16 09:48:06 --> CSRF token verified.
+INFO - 2023-11-16 09:49:04 --> CSRF token verified.
+INFO - 2023-11-16 09:49:37 --> CSRF token verified.
+INFO - 2023-11-16 10:07:24 --> CSRF token verified.
+INFO - 2023-11-16 10:07:33 --> CSRF token verified.
+INFO - 2023-11-16 10:08:10 --> CSRF token verified.
+INFO - 2023-11-16 10:08:37 --> CSRF token verified.
+INFO - 2023-11-16 10:08:41 --> CSRF token verified.
+INFO - 2023-11-16 10:09:30 --> CSRF token verified.
+INFO - 2023-11-16 10:10:33 --> CSRF token verified.
+INFO - 2023-11-16 10:11:00 --> CSRF token verified.
+INFO - 2023-11-16 10:12:03 --> CSRF token verified.
+INFO - 2023-11-16 10:13:14 --> CSRF token verified.
+INFO - 2023-11-16 10:13:23 --> CSRF token verified.
+INFO - 2023-11-16 10:13:54 --> CSRF token verified.
+INFO - 2023-11-16 10:14:03 --> CSRF token verified.
+CRITICAL - 2023-11-16 10:15:16 --> The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\admin\editbook.php(18): redirect('/admin')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 7 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:15:20 --> The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\admin\editbook.php(18): redirect('/admin')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 7 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:17:03 --> Cannot redeclare redirect() (previously declared in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Common.php:873)
+in APPPATH\Views\admin\editbook.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:17:04 --> Cannot redeclare redirect() (previously declared in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Common.php:873)
+in APPPATH\Views\admin\editbook.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:17:05 --> Cannot redeclare redirect() (previously declared in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Common.php:873)
+in APPPATH\Views\admin\editbook.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:17:05 --> Cannot redeclare redirect() (previously declared in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Common.php:873)
+in APPPATH\Views\admin\editbook.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 10:17:36 --> CSRF token verified.
+CRITICAL - 2023-11-16 10:19:13 --> The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 APPPATH\Views\admin\editbook.php(72): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\admin\editbook.php(76): redirectt()
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 7 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:19:14 --> The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 APPPATH\Views\admin\editbook.php(72): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\admin\editbook.php(76): redirectt()
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 7 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:19:22 --> The route for "/admin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/admin')
+ 2 APPPATH\Views\admin\editbook.php(72): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\admin\editbook.php(76): redirectt()
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\editbook.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/editbook', [], true)
+ 7 APPPATH\Controllers\Admin.php(25): view('admin/editbook', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->editbook('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 10:19:24 --> CSRF token verified.
+CRITICAL - 2023-11-16 10:22:42 --> Undefined variable $book
+in APPPATH\Views\admin\addbook.php on line 11.
+ 1 APPPATH\Views\admin\addbook.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $book', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php', 11)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/addbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(62): view('admin/addbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->addbook()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:22:44 --> Undefined variable $book
+in APPPATH\Views\admin\addbook.php on line 11.
+ 1 APPPATH\Views\admin\addbook.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $book', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php', 11)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/addbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(62): view('admin/addbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->addbook()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:22:58 --> Undefined variable $book
+in APPPATH\Views\admin\addbook.php on line 13.
+ 1 APPPATH\Views\admin\addbook.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $book', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/addbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(62): view('admin/addbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->addbook()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:22:59 --> Undefined variable $book
+in APPPATH\Views\admin\addbook.php on line 13.
+ 1 APPPATH\Views\admin\addbook.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $book', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\addbook.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/addbook', [], true)
+ 5 APPPATH\Controllers\Admin.php(62): view('admin/addbook', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->addbook()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 10:46:52 --> CSRF token verified.
+CRITICAL - 2023-11-16 10:51:54 --> Undefined variable $success
+in APPPATH\Views\admin\home.php on line 8.
+ 1 APPPATH\Views\admin\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $success', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 10:52:09 --> Undefined variable $success
+in APPPATH\Views\admin\home.php on line 8.
+ 1 APPPATH\Views\admin\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $success', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 10:54:35 --> CSRF token verified.
+CRITICAL - 2023-11-16 11:19:06 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/deletebook/2', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:21:45 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/deletebook', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:26:00 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/deletebook', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:26:17 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/deletebook', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:28:18 --> Undefined property: CodeIgniter\View\View::$security
+in APPPATH\Views\admin\home.php on line 56.
+ 1 APPPATH\Views\admin\home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$security', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/home', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('admin/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:29:19 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/deletebook', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:29:25 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/deletebook', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 11:36:01 --> CSRF token verified.
+INFO - 2023-11-16 11:36:35 --> CSRF token verified.
+INFO - 2023-11-16 11:38:12 --> CSRF token verified.
+INFO - 2023-11-16 11:39:26 --> CSRF token verified.
+INFO - 2023-11-16 11:39:33 --> CSRF token verified.
+INFO - 2023-11-16 11:40:33 --> CSRF token verified.
+INFO - 2023-11-16 11:40:49 --> CSRF token verified.
+INFO - 2023-11-16 11:44:03 --> CSRF token verified.
+INFO - 2023-11-16 11:45:42 --> CSRF token verified.
+INFO - 2023-11-16 11:46:09 --> CSRF token verified.
+INFO - 2023-11-16 11:46:16 --> CSRF token verified.
+INFO - 2023-11-16 11:46:21 --> CSRF token verified.
+INFO - 2023-11-16 11:49:12 --> CSRF token verified.
+INFO - 2023-11-16 11:49:42 --> CSRF token verified.
+INFO - 2023-11-16 11:50:54 --> CSRF token verified.
+INFO - 2023-11-16 11:50:57 --> CSRF token verified.
+INFO - 2023-11-16 11:51:53 --> CSRF token verified.
+INFO - 2023-11-16 11:52:11 --> CSRF token verified.
+INFO - 2023-11-16 11:52:17 --> CSRF token verified.
+INFO - 2023-11-16 11:52:19 --> CSRF token verified.
+INFO - 2023-11-16 11:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 11:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 11:58:10 --> mysqli_sql_exception: Table 'mendirek.users' doesn't exist in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Admin.php(131): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Admin->login()
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:58:10 --> Table 'mendirek.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `name` IS NULL
+AND `password` IS NULL', [], false)
+ 2 APPPATH\Controllers\Admin.php(131): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:58:55 --> Undefined variable $title
+in APPPATH\Views\admin\layouts\head.php on line 2.
+ 1 APPPATH\Views\admin\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/layouts/head', [], true)
+ 5 APPPATH\Views\admin\login.php(4): view('/admin/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\login.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/login', [], true)
+ 9 APPPATH\Controllers\Admin.php(127): view('admin/login', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 11:58:56 --> Undefined variable $title
+in APPPATH\Views\admin\layouts\head.php on line 2.
+ 1 APPPATH\Views\admin\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/layouts/head', [], true)
+ 5 APPPATH\Views\admin\login.php(4): view('/admin/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\login.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/login', [], true)
+ 9 APPPATH\Controllers\Admin.php(127): view('admin/login', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:02:45 --> CSRF token verified.
+ERROR - 2023-11-16 12:02:45 --> mysqli_sql_exception: Table 'mendirek.users' doesn't exist in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Admin.php(134): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#10 {main}
+CRITICAL - 2023-11-16 12:02:45 --> Table 'mendirek.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `name` IS NULL
+AND `password` IS NULL', [], false)
+ 2 APPPATH\Controllers\Admin.php(134): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:03:30 --> CSRF token verified.
+ERROR - 2023-11-16 12:03:30 --> mysqli_sql_exception: Table 'mendirek.users' doesn't exist in C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\20030\OneDrive\Masaüstü\mendirek\app\Controllers\Admin.php(134): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+#6 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\20030\OneDrive\Masaüstü\mendirek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\20030\OneDrive\Masaüstü\mendirek\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\...')
+#10 {main}
+CRITICAL - 2023-11-16 12:03:30 --> Table 'mendirek.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `name` IS NULL
+AND `password` IS NULL', [], false)
+ 2 APPPATH\Controllers\Admin.php(134): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:04:05 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:04:05 --> Undefined array key "name"
+in APPPATH\Controllers\Admin.php on line 132.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:04:05 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:04:05 --> Undefined array key "name"
+in APPPATH\Controllers\Admin.php on line 132.
+ 1 APPPATH\Controllers\Admin.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:04:16 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:04:16 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 135.
+ 1 APPPATH\Controllers\Admin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:04:17 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:04:17 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 135.
+ 1 APPPATH\Controllers\Admin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:04:42 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:04:42 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 135.
+ 1 APPPATH\Controllers\Admin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:05:19 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:05:20 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 12:05:21 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+CRITICAL - 2023-11-16 12:05:22 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:05:25 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:06:12 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:06:15 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:06:15 --> Undefined variable $title
+in APPPATH\Views\admin\layouts\head.php on line 2.
+ 1 APPPATH\Views\admin\layouts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\layouts\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/layouts/head', [], true)
+ 5 APPPATH\Views\admin\login.php(4): view('/admin/layouts/head')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Views\\admin\\login.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/login', [], true)
+ 9 APPPATH\Controllers\Admin.php(149): view('admin/login', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:06:32 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:06:36 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:06:39 --> CSRF token verified.
+INFO - 2023-11-16 12:06:54 --> CSRF token verified.
+INFO - 2023-11-16 12:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 12:06:54 --> Attempt to read property "name" on array
+in APPPATH\Controllers\Admin.php on line 141.
+ 1 APPPATH\Controllers\Admin.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:07:21 --> CSRF token verified.
+INFO - 2023-11-16 12:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 12:07:21 --> Attempt to read property "name" on array
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 APPPATH\Controllers\Admin.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:07:25 --> CSRF token verified.
+CRITICAL - 2023-11-16 12:07:25 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 136.
+ 1 APPPATH\Controllers\Admin.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:08:57 --> CSRF token verified.
+INFO - 2023-11-16 12:08:59 --> CSRF token verified.
+INFO - 2023-11-16 12:09:02 --> CSRF token verified.
+INFO - 2023-11-16 12:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 12:09:02 --> Undefined array key "name"
+in APPPATH\Controllers\Admin.php on line 145.
+ 1 APPPATH\Controllers\Admin.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 12:09:16 --> CSRF token verified.
+INFO - 2023-11-16 12:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:14:44 --> CSRF token verified.
+INFO - 2023-11-16 12:14:46 --> CSRF token verified.
+INFO - 2023-11-16 12:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:29 --> CSRF token verified.
+INFO - 2023-11-16 12:39:32 --> CSRF token verified.
+INFO - 2023-11-16 12:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 12:57:00 --> CSRF token verified.
+INFO - 2023-11-16 12:57:08 --> CSRF token verified.
+INFO - 2023-11-16 13:03:14 --> CSRF token verified.
+CRITICAL - 2023-11-16 13:03:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 160.
+ 1 APPPATH\Controllers\Admin.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\app\\Controllers\\Admin.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->login_post()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\20030\\OneDrive\\Masaüstü\\mendirek\\public\\index.php')
+INFO - 2023-11-16 13:04:19 --> CSRF token verified.
+INFO - 2023-11-16 13:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:04:23 --> CSRF token verified.
+INFO - 2023-11-16 13:05:15 --> CSRF token verified.
+INFO - 2023-11-16 13:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

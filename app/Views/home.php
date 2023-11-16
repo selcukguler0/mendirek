@@ -22,7 +22,7 @@
                                                     <div class="swiper-wrapper">
                                                         <?php foreach ($books as $book) : ?>
                                                             <div class="swiper-slide" style="display: flex;justify-content: center;">
-                                                                <img style="width: 100%;height: auto;max-width: 200px;aspect-ratio: 100/87;" <?php echo 'src="/img/books/' . $book->img . '.jpeg"'; ?> />
+                                                                <img style="width: 100%;height: auto;max-width: 200px;aspect-ratio: 100/87;" src='/img/books/<?php echo $book->img; ?>' />
                                                             </div>
                                                         <?php endforeach ?>
                                                     </div>
@@ -58,7 +58,7 @@
                                                                     <div class="Product-image-wrapper">
                                                                         <div class="Product-image image_b">
                                                                             <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
-                                                                                <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>.jpeg" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
+                                                                                <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                             </a>
                                                                             <!-- 
                                                             <div class="actions">
@@ -119,7 +119,7 @@
                                                                     <div class="Product-image-wrapper">
                                                                         <div class="Product-image image_b">
                                                                             <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
-                                                                                <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>.jpeg" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
+                                                                                <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                             </a>
                                                                             <!-- 
                                                             <div class="actions">
@@ -182,7 +182,7 @@
                                                                     <div class="Product-image-wrapper">
                                                                         <div class="Product-image image_b">
                                                                             <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
-                                                                                <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>.jpeg" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
+                                                                                <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                             </a>
                                                                             <!-- 
                                                             <div class="actions">

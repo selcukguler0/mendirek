@@ -29,7 +29,7 @@
                                                         <div class="Product-image-wrapper">
                                                             <div class="Product-image image_b">
                                                                 <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
-                                                                    <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>.jpeg" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
+                                                                    <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                 </a>
                                                                 <!-- 
                                                             <div class="actions">

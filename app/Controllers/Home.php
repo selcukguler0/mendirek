@@ -40,7 +40,7 @@ class Home extends BaseController
             $this->db->escapeString($this->request->getGet("q"));
 
         $query =
-            $this->db->query('SELECT * FROM mendirek.books WHERE name like "%' . $search_query . '%" or author LIKE "%' . $search_query . '%";');
+            $this->db->query('SELECT * FROM books WHERE name like "%' . $search_query . '%" or author LIKE "%' . $search_query . '%";');
         $books = $query->getResult();
 
         $data["search_query"] = $search_query;
