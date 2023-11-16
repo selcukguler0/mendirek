@@ -101,4 +101,10 @@ class Home extends BaseController
 
         return view('yazarlar_grup', $data);
     }
+
+    public function lolla_kids(): string
+    {
+        $data["title"] = "Mendirek Dükkan | Lolla Kids";
+        return view("lolla_kids", $data);
+    }
 }

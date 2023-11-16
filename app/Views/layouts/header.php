@@ -58,6 +58,8 @@
                   </li>
                   <li><a href="/iletisim"><span>İletişim</span></a>
                   </li>
+                  <li><a href="/lolla-kids"><span>Lolla Kids</span></a>
+                  </li>
 
 
                   <!-- <li class="d-block d-md-none"><a href="/kategoriler.html"><span>Kategoriler</span></a>
