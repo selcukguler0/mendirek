@@ -134,13 +134,12 @@ class User extends BaseController
     {
         if ($this->request->is("post")) {
             $data = [
-                'username' => $this->request->getPost('username'),
-                'password' => $this->request->getPost('password'),
+                'email' => $this->request->getPost('email'),
             ];
 
             // Check if user exists
-            $builder = $this->db->table('admins');
-            $builder->where('username', $data["username"]);
+            $builder = $this->db->table('users');
+            $builder->where('email', $data["email"]);
             $query = $builder->get();
 
             $users = $query->getResultArray();
@@ -148,32 +147,52 @@ class User extends BaseController
             if (!empty($users)) {
                 //verify password
                 $user = $users[0];
-                if (!password_verify(strval($data['password']), $user["password"])) {
-                    $data["title"] = "Mendirek Dükkan | Üye Girişi";
-                    $data["error"] = "Kullanıcı adı veya şifre yanlış!";
-                    return view('login', $data);
-                }
+                
+                //send mail
 
-                // Create session
-                $session = session();
-                $session->set('user', $user["username"]);
-
-                return redirect()->to(base_url() . 'hesabim');
+                $data["success"] = "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi!";
             } else {
                 // User not found
-                $data["title"] = "Mendirek Dükkan | Şifremi Unuttum";
-                $data["error"] = "Kullanıcı adı veya şifre yanlış!";
+                $data["error"] = "E-posta adresi bulunamadı!";
             }
         }
         $data["title"] = "Mendirek Dükkan | Şifremi Unuttum";
 
         return view('user/forgot-pass', $data);
     }
+    public function activation_code()
+    {
+        if ($this->request->is("post")) {
+            $data = [
+                'email' => $this->request->getPost('email'),
+            ];
+
+            // Check if user exists
+            $builder = $this->db->table('users');
+            $builder->where('email', $data["email"]);
+            $query = $builder->get();
+
+            $users = $query->getResultArray();
+
+            if (!empty($users)) {
+                //verify password
+                $user = $users[0];
+                
+                //send mail
+
+                $data["success"] = "Aktivasyon kodu e-posta adresinize gönderildi!";
+            } else {
+                // User not found
+                $data["error"] = "E-posta adresi bulunamadı!";
+            }
+        }
+        $data["title"] = "Mendirek Dükkan | Aktivasyon Kodu";
+
+        return view('user/activation-code', $data);
+    }
     public function verify_mail()
     {
-
         $data["title"] = "Mendirek Dükkan | E-posta Doğrulama";
-
         return view('user/verify-mail', $data);
     }
     public function logout()

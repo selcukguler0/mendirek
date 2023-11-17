@@ -14,7 +14,7 @@
                     <div id="layout_style" class="container layout_010">
                         <div class="main_content">
                             <div class="Box mmb_pass_forgot_form">
-                                <h1 class="contentHeader passwordForgotHeader">Şifremi unuttum</h1>
+                                <h1 class="contentHeader passwordForgotHeader">Aktivasyon maili gönder</h1>
                                 <?php if (isset($error)) : ?>
                                     <div class="alert alert-danger" role="alert">
                                         <?= $error ?>
@@ -25,7 +25,7 @@
                                         <?= $success ?>
                                     </div>
                                 <?php endif; ?>
-                                <form action="/forgot-pass" method="post" class="validate_form" style="max-width: 300px;">
+                                <form action="/activation-code" method="post" class="validate_form" style="max-width: 300px;">
                                     <?= csrf_field(); ?>
                                     <div class="form_table pass_forgot_form">
                                         <div class="form-group">

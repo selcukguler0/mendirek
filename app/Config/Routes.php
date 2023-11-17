@@ -18,6 +18,7 @@ $routes->get('/lolla-kids', 'Home::lolla_kids');
 $routes->match(['get', 'post'], '/login', 'User::login');
 $routes->match(['get', 'post'], '/register', 'User::register');
 $routes->match(['get', 'post'], '/forgot-pass', 'User::forgot_pass');
+$routes->match(['get', 'post'], '/activation-code', 'User::activation_code');
 $routes->get('/logout', 'User::logout');
 $routes->get('/verify-mail', 'User::verify_mail');
 $routes->get('/hesabim', 'User::hesabim');
