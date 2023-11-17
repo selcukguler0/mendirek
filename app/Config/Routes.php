@@ -14,6 +14,14 @@ $routes->get('/yazarlar/ara', 'Home::yazarlar_ara');
 $routes->get('/yazarlar/(:any)', 'Home::yazarlar_grup/$1');
 $routes->get('/lolla-kids', 'Home::lolla_kids');
 
+// User
+$routes->match(['get', 'post'], '/login', 'User::login');
+$routes->match(['get', 'post'], '/register', 'User::register');
+$routes->match(['get', 'post'], '/forgot-pass', 'User::forgot_pass');
+$routes->get('/logout', 'User::logout');
+$routes->get('/verify-mail', 'User::verify_mail');
+$routes->get('/hesabim', 'User::hesabim');
+
 // Admin
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/editbook/(:any)', 'Admin::editbook/$1');
@@ -24,4 +32,3 @@ $routes->post('/admin/deletebook', 'Admin::deletebook');
 $routes->get('/admin/login', 'Admin::login');
 $routes->post('/admin/login', 'Admin::login_post');
 $routes->get('/admin/logout', 'Admin::logout');
-

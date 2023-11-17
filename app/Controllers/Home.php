@@ -9,13 +9,13 @@ class Home extends BaseController
     public function __construct()
     {
         $this->db = db_connect();
+        session();
     }
     public function index(): string
     {
         $query = $this->db->query('SELECT * FROM books');
 
         $books = $query->getResult();
-        //get first 10 books
         $data["books"] = $books;
         $data["featured"] = array_slice($books, 0, 15);
         $data["populer"] = array_slice($books, 15, 30);

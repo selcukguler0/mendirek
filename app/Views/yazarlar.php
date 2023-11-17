@@ -110,6 +110,7 @@
             </div>
         </div>
     </div>
+    <?php echo view('layouts/footer-mail'); ?>
     <?php echo view('layouts/footer'); ?>
 </body>
 

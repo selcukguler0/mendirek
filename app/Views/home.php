@@ -234,11 +234,10 @@
             </div>
         </div>
     </div>
-
+    <?php echo view('layouts/footer-mail'); ?>
     <?php echo view('layouts/footer'); ?>
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         new Swiper(".mainSwiper", {
@@ -349,7 +348,6 @@
         });
     </script>
 
-    <script src="/js/combine.js"></script>
 </body>
 
 </html>

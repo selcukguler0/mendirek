@@ -24,31 +24,62 @@
                   </form>
               </div>
           </div>
-          <!-- <div class="Header-right">
-                            <div class="Header-right-profile">
-                                <a class="btn btn-light" href="//index.php?p=Login" rel="nofollow">
-                                    <i class="la la-user"></i>
-                                    <span>Üye Girişi</span>
-                                </a>
-                            </div>
-                            <div class="Cart ">
-                                <div class="Cart-icon">
-                                    <a href="//cart" class="btn btn-light">
-                                        <i class="la la-shopping-cart"></i>
-                                        <span>Sepetim</span>
-                                        <span class="dy_cart_prd_count">0</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="cart_box_container"></div>
-                        </div> -->
+          <div class="Header-right">
+              <div class="Header-right-profile">
+                <?php if (isset($_SESSION['user'])): ?>
+                  <a class="btn btn-light" href="/hesabim" rel="nofollow">
+                      <i class="la la-user"></i>
+                      <span>Hesabım</span>
+                  </a>
+                <?php else: ?>
+                    <a class="btn btn-light" href="/login" rel="nofollow">
+                      <i class="la la-user"></i>
+                      <span>Üye Girişi</span>
+                  </a>
+                <?php endif; ?>
+              </div>
+              <div class="Cart ">
+                  <div class="Cart-icon">
+                      <a href="/cart" class="btn btn-light">
+                          <i class="la la-shopping-cart"></i>
+                          <span>Sepetim</span>
+                          <span class="dy_cart_prd_count">0</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="cart_box_container"></div>
+          </div>
       </div>
 
       <nav class="Header-menu">
           <div class="Header-menu-overlay"></div>
           <div class="container">
               <i id="HeaderMenuClose" class="la la-times"></i>
+              <div class="Header-right">
+              <div class="Header-right-profile">
+                <?php if (isset($_SESSION['user'])): ?>
+                  <a class="btn btn-light" href="/hesabim" rel="nofollow">
+                      <i class="la la-user"></i>
+                      <span>Hesabım</span>
+                  </a>
+                <?php else: ?>
+                    <a class="btn btn-light" href="/login" rel="nofollow">
+                      <i class="la la-user"></i>
+                      <span>Üye Girişi</span>
+                  </a>
+                <?php endif; ?>
+              </div>
+              <div class="Cart ">
+                  <div class="Cart-icon">
+                      <a href="/cart" class="btn btn-light">
+                          <i class="la la-shopping-cart"></i>
+                          <span>Sepetim</span>
+                          <span class="dy_cart_prd_count">0</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="cart_box_container"></div>
+          </div>
               <ul>
                   <li><a href="/"><span>Anasayfa</span></a>
                   </li>

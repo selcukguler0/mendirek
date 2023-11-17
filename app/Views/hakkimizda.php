@@ -43,66 +43,8 @@
         </div>
     </div>
 
+    <?php echo view('layouts/footer-mail'); ?>
     <?php echo view('layouts/footer'); ?>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            grabCursor: true,
-            pagination: {
-                el: ".swiper-pagination-one-cikanlar",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next-one-cikanlar",
-                prevEl: ".swiper-button-prev-one-cikanlar",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
-                },
-            },
-        });
-
-        var swiperpopuler = new Swiper(".mySwiper-Populer", {
-            grabCursor: true,
-            pagination: {
-                el: ".swiper-pagination-populer",
-                clickable: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next-populer",
-                prevEl: ".swiper-button-prev-populer",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
-
-    <script src="/js/combine.js"></script>
 </body>
 
 </html>

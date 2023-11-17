@@ -13,6 +13,7 @@
     <link type="text/css" href="/css/main.css" rel="stylesheet">
     <link type="text/css" href="/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <style>
         .banner_cookie {

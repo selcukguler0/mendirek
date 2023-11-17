@@ -13,7 +13,7 @@ class Admin extends BaseController
     public function is_logged_in()
     {
         $session = session();
-        if ($session->get('user') == null) {
+        if ($session->get('admin') == null) {
             return false;
         } else {
             return true;
@@ -28,7 +28,7 @@ class Admin extends BaseController
         $query = $this->db->query("SELECT * FROM books");
         $data["books"] = $query->getResultArray();
         $data["title"] = "Mendirek Dükkan | Admin";
-        $data["user"] = session()->get('user');
+        $data["user"] = session()->get('admin');
 
         if (isset($_GET["success"])) {
             $data["success"] = $_GET["success"];
@@ -171,7 +171,7 @@ class Admin extends BaseController
 
             // Create session
             $session = session();
-            $session->set('user', $user["username"]);
+            $session->set('admin', $user["username"]);
 
             return redirect()->to(base_url() . 'admin');
         } else {
