@@ -40,10 +40,10 @@
               </div>
               <div class="Cart ">
                   <div class="Cart-icon">
-                      <a href="/cart" class="btn btn-light">
+                      <a href="/card" class="btn btn-light">
                           <i class="la la-shopping-cart"></i>
                           <span>Sepetim</span>
-                          <span class="dy_cart_prd_count">0</span>
+                          <span id="bucket" class="dy_cart_prd_count"></span>
                       </a>
                   </div>
               </div>
@@ -68,15 +68,6 @@
                       <span>Üye Girişi</span>
                   </a>
                 <?php endif; ?>
-              </div>
-              <div class="Cart ">
-                  <div class="Cart-icon">
-                      <a href="/cart" class="btn btn-light">
-                          <i class="la la-shopping-cart"></i>
-                          <span>Sepetim</span>
-                          <span class="dy_cart_prd_count">0</span>
-                      </a>
-                  </div>
               </div>
               <div class="cart_box_container"></div>
           </div>
@@ -122,3 +113,5 @@
           </div>
       </nav>
   </header>
+
+  <script src="/js/card.js"></script>

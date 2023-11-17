@@ -9,6 +9,7 @@ class User extends BaseController
     public function __construct()
     {
         $this->db = db_connect();
+        session();
     }
     public function is_logged_in()
     {
@@ -30,6 +31,15 @@ class User extends BaseController
         
         $data["title"] = "Mendirek Dükkan | Hesabım";
         return view('user/hesabim', $data);
+    }
+
+    public function card()
+    {
+        $data["title"] = "Mendirek Dükkan | Sepetim";
+        helper('cookie');
+        $cookie = get_cookie('card');
+        $data["card"] = json_decode($cookie, true);
+        return view('user/card', $data);
     }
 
     // LOGIN - REGISTER - FORGOT PASS - VERIFY MAIL - LOGOUT

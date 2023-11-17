@@ -22,6 +22,7 @@ $routes->match(['get', 'post'], '/activation-code', 'User::activation_code');
 $routes->get('/logout', 'User::logout');
 $routes->get('/verify-mail', 'User::verify_mail');
 $routes->get('/hesabim', 'User::hesabim');
+$routes->get('/card', 'User::card');
 
 // Admin
 $routes->get('/admin', 'Admin::index');

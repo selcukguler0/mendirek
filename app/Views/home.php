@@ -54,18 +54,17 @@
                                                     <ul class="swiper-wrapper">
                                                         <?php foreach ($featured as $book) : ?>
                                                             <li class="swiper-slide">
-                                                                <div class="Product Product_b Product_885" data-prd-id="885">
+                                                                <div class="Product Product_b Product_885">
                                                                     <div class="Product-image-wrapper">
                                                                         <div class="Product-image image_b">
                                                                             <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
                                                                                 <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                             </a>
-                                                                            <!-- 
-                                                            <div class="actions">
-                                                                <a data-prd-id="885" class="btn btn-dark btn-sm button_add_to_cart">
-                                                                    <span class="button-text">Sepete Ekle</span>
-                                                                </a>
-                                                            </div> -->
+                                                                            <div class="actions">
+                                                                                <button book-id="<?php echo $book->id ?>" book-name="<?php echo $book->name ?>" book-price="<?php echo $book->price ?>" book-img="<?php echo $book->img ?>" onclick="addToCart(this)" class="btn btn-dark">
+                                                                                    <span class="button-text">Sepete Ekle</span>
+                                                                                </button>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="Product-content">
@@ -121,12 +120,12 @@
                                                                             <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
                                                                                 <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                             </a>
-                                                                            <!-- 
-                                                            <div class="actions">
-                                                                <a data-prd-id="885" class="btn btn-dark btn-sm button_add_to_cart">
-                                                                    <span class="button-text">Sepete Ekle</span>
-                                                                </a>
-                                                            </div> -->
+
+                                                                            <div class="actions">
+                                                                                <a onclick="addToCart(<?php echo $book->id ?>)" class="btn btn-dark btn-sm">
+                                                                                    <span class="button-text">Sepete Ekle</span>
+                                                                                </a>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="Product-content">
@@ -184,12 +183,11 @@
                                                                             <a title="<?php echo $book->name ?>" class="tooltip-ajax" href="#">
                                                                                 <img class="prd_img prd_img_118_0_885 lazy" width="100" height="100" src="/img/books/<?php echo $book->img ?>" alt="<?php echo $book->name ?>" title="<?php echo $book->name ?>" style="">
                                                                             </a>
-                                                                            <!-- 
-                                                            <div class="actions">
-                                                                <a data-prd-id="885" class="btn btn-dark btn-sm button_add_to_cart">
-                                                                    <span class="button-text">Sepete Ekle</span>
-                                                                </a>
-                                                            </div> -->
+                                                                            <div class="actions">
+                                                                                <a onclick="addToCart(<?php echo $book->id ?>)" class="btn btn-dark btn-sm">
+                                                                                    <span class="button-text">Sepete Ekle</span>
+                                                                                </a>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="Product-content">
