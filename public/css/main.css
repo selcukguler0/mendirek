@@ -76,7 +76,7 @@
   width: 15px;
   height: 15px;
   font-size: 0.8em;
-  background-color: rgb(var(--color-primary));
+  background-color: black!important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,9 +150,15 @@
   margin-bottom: 20px;
   border-radius: 5px;
 }
+.la-shopping-cart {
+  color: white!important;
+}
 @media screen and (max-width: 768px) {
   .button_cart_delete {
     display: none;
+  }
+  .la-shopping-cart {
+    color: black;
   }
 }
 .categories_list_items {
@@ -1069,6 +1075,7 @@ textarea.form-control {
   position: sticky;
   top: 0;
   z-index: 300;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .Header-logo a {
   margin: 0 auto;
@@ -1107,6 +1114,9 @@ textarea.form-control {
   color: #777;
   font-size: 2em;
   margin-right: 5px;
+}
+.Header-menu {
+  background-color: white!important;
 }
 .Header-menu ul {
   margin-bottom: 0;
@@ -1160,6 +1170,9 @@ textarea.form-control {
 .Header #HeaderSearchClose,
 .Header #HeaderSearchOpen {
   cursor: pointer;
+}
+.orange-btn {
+  background-color: #f76e31;
 }
 @media screen and (max-width: 768px) {
   h1.contentHeader {
@@ -1683,13 +1696,14 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
   .Header-menu {
+    background-color: white!important;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     height: calc(100vh - 100px);
     overflow-y: auto;
   }
   .Header-menu ul li a span {
-    color: #fff;
+    color: white;
   }
   .page_prdlist .layout_011 .main_content,
   .page_prdlist .layout_110 .main_content {
@@ -2248,7 +2262,7 @@ textarea.form-control {
   display: block;
   padding: 15px 20px;
   text-align: center;
-  color: #fff;
+  color: black;
   font-size: 0.8em;
   font-weight: 600;
 }

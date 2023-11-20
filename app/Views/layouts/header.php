@@ -32,17 +32,17 @@
                       <span>Hesabım</span>
                   </a>
                 <?php else: ?>
-                    <a class="btn btn-light" href="/login" rel="nofollow">
-                      <i class="la la-user"></i>
-                      <span>Üye Girişi</span>
+                    <a class="btn orange-btn" href="/login" rel="nofollow">
+                      <i style="color: white;" class="la la-user"></i>
+                      <span style="color: white;">Üye Girişi</span>
                   </a>
                 <?php endif; ?>
               </div>
               <div class="Cart ">
                   <div class="Cart-icon">
-                      <a href="/card" class="btn btn-light">
+                      <a href="/card" class="btn orange-btn">
                           <i class="la la-shopping-cart"></i>
-                          <span>Sepetim</span>
+                          <span style="color: white;">Sepetim</span>
                           <span id="bucket" class="dy_cart_prd_count"></span>
                       </a>
                   </div>
@@ -78,14 +78,12 @@
                   </li> -->
                   <li><a href="/yazarlar"><span>Yazarlar</span></a>
                   </li>
+                  <li><a href="/lolla-kids"><span>Lolla Kids</span></a>
+                  </li>
                   <li><a href="/hakkimizda"><span>Hakkımızda</span></a>
                   </li>
                   <li><a href="/iletisim"><span>İletişim</span></a>
                   </li>
-                  <li><a href="/lolla-kids"><span>Lolla Kids</span></a>
-                  </li>
-
-
                   <!-- <li class="d-block d-md-none"><a href="/kategoriler.html"><span>Kategoriler</span></a>
                                     <ul>
                                         <li><a href="/yabanci"><span>Yabancı</span></a>
