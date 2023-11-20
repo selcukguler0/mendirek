@@ -13,3 +13,8 @@
  *
  * @see: https://codeigniter.com/user_guide/extending/common.html
  */
+
+function show_404()
+{
+    return view('errors/404');
+}

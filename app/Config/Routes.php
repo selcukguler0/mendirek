@@ -5,6 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+// Home
 $routes->get('/', 'Home::index');
 $routes->get('/hakkimizda', 'Home::hakkimizda');
 $routes->get('/iletisim', 'Home::iletisim');
@@ -13,6 +15,7 @@ $routes->get('/yazarlar', 'Home::yazarlar');
 $routes->get('/yazarlar/ara', 'Home::yazarlar_ara');
 $routes->get('/yazarlar/(:any)', 'Home::yazarlar_grup/$1');
 $routes->get('/lolla-kids', 'Home::lolla_kids');
+$routes->get('/kitaplar/(:any)', 'Home::kitaplar/$1');
 
 // User
 $routes->match(['get', 'post'], '/login', 'User::login');
@@ -34,3 +37,9 @@ $routes->post('/admin/deletebook', 'Admin::deletebook');
 $routes->get('/admin/login', 'Admin::login');
 $routes->post('/admin/login', 'Admin::login_post');
 $routes->get('/admin/logout', 'Admin::logout');
+
+// 404
+$routes->set404Override(function () {
+    $data["title"] = "Mendirek Dükkan | 404";
+    return view('errors/404', $data);
+});

@@ -62,8 +62,6 @@
                                     </span>
                                 </div>
 
-
-
                                 <form action="/cart" method="post" name="list_frm" class="list_form mt-3">
                                     <?php if (isset($card)) : ?>
                                         <table class="table cart_list_table table-bordered">
@@ -127,18 +125,17 @@
                                                         </td>
 
                                                         <td class="rsp-hide-538">
-                                                            <?php echo $book['price']; ?></sup><span class="la la-try la_cur_code"></span>
+                                                            <?php echo $book['price']; ?></sup> ₺
                                                         </td>
 
                                                         <td width="100" class="rsp-hide-538">
                                                             <div class="d-flex flex-column align-items-center">
-                                                                <input class="form-control quantity" min="1" size="2" type="number" value="1" name="quantity[545874]">
+                                                                <input class="form-control quantity" min="1" size="2" type="number" value="<?php echo $book['quantity']; ?>" onchange="increaseQuantity(<?php echo $book['id']; ?>, this)">
                                                                 <!-- <input name="bulk_update" type="submit" class="btn btn-sm btn-light mt-2 button_cart_update" value="Güncelle"> -->
                                                             </div>
                                                         </td>
                                                         <td class="rsp-hide-538">
-                                                            000
-                                                            <span class="la la-try la_cur_code"></span>
+                                                            <span id="total-price-<?php echo $book['id']; ?>" class="book-total-price"><?php echo $book['total']; ?></span> ₺
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>
@@ -149,7 +146,7 @@
                                                 <input type="submit" name="del" id="del" class="btn btn-danger btn-sm button_delete button_cart_delete" value="Sil">
                                                 <div class="ml-auto">
                                                     <span>Ürün Toplamları:&nbsp;</span>
-                                                    <b>1000</sup><span class="la la-try la_cur_code"></span></b>
+                                                    <b id="total-price">1000 ₺</b>
                                                 </div>
                                             </div>
                                         </div>

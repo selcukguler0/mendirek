@@ -15,7 +15,7 @@
                   <form action="/search">
                       <div class="Search-content">
                           <div class="form-group form-group-search">
-                              <input data-container="form-group-search" type="search" name="q" id="qsearch" class="form-control" value="" placeholder="kitap adı / yazar / yayınevi " autocomplete="off">
+                              <input data-container="form-group-search" type="search" name="q" id="qsearch" class="form-control" value="" placeholder="kitap adı / yazar" autocomplete="off">
                               <button type="submit" class="btn">
                                   <i class="la la-search" style="margin-top: 4px;margin-right: 15px;"></i>
                               </button>
@@ -74,6 +74,8 @@
               <ul>
                   <li><a href="/"><span>Anasayfa</span></a>
                   </li>
+                  <!-- <li><a href="/kitaplar/kampanya"><span>Kampanyalı Ürünler</span></a>
+                  </li> -->
                   <li><a href="/yazarlar"><span>Yazarlar</span></a>
                   </li>
                   <li><a href="/hakkimizda"><span>Hakkımızda</span></a>

@@ -1,27 +1,7 @@
-// function addToCart(id) {
-//     const card = localStorage.getItem('card');
-//     if (!card) {
-//         localStorage.setItem('card', JSON.stringify([{id: id, quantity: 1}]));
-//         bucket();
-//     }else {
-//         const cardArray = JSON.parse(card);
-//         const book = cardArray.find((item) => item.id === id);
-//         if (book) {
-//             book.quantity++;
-//             localStorage.setItem('card', JSON.stringify(cardArray));
-//             console.log(localStorage.getItem('card'));
-
-//             bucket();
-//             return;
-//         }
-//         cardArray.push({
-//             id: id,
-//             quantity: 1
-//         });
-//         localStorage.setItem('card', JSON.stringify(cardArray));
-//     }
-//     bucket();
-// }
+window.onload = function () {
+  bucket();
+  updateTotalPrice();
+};
 
 function removeFromCart(id) {
   const card = localStorage.getItem("card");
@@ -60,18 +40,16 @@ function bucket() {
   const cardArray = JSON.parse(card);
   let sum = 0;
   cardArray.forEach((item) => {
-    sum += item.quantity;
+    console.log(item.quantity);
+    sum += parseInt(item.quantity);
   });
+  console.log("bucket", sum);
   if (sum > 9) {
     document.getElementById("bucket").innerText = 9 + "+";
     return;
   }
   document.getElementById("bucket").innerText = sum;
 }
-
-window.onload = function () {
-  bucket();
-};
 
 function addToCart(book) {
   console.log(book);
@@ -81,8 +59,18 @@ function addToCart(book) {
   const image = book.getAttribute("book-img");
   let card = getCard();
   if (!card) {
-    const book = { id, name, price, image, quantity: 1 };
-    document.cookie = "card=" + JSON.stringify([book]) + ";expires=Thu, 01 Jan 2030 00:00:00 UTC;";
+    const book = {
+      id,
+      name,
+      price,
+      image,
+      quantity: 1,
+      total: price,
+    };
+    document.cookie =
+      "card=" +
+      JSON.stringify([book]) +
+      ";expires=Thu, 01 Jan 2030 00:00:00 UTC;";
     bucket();
   } else {
     const cardArray = JSON.parse(card);
@@ -99,6 +87,7 @@ function addToCart(book) {
       price,
       image,
       quantity: 1,
+      total: (price * book?.quantity) | price,
     });
     document.cookie = "card=" + JSON.stringify(cardArray);
     bucket();
@@ -119,4 +108,37 @@ function getCard() {
     }
   }
   return null;
+}
+
+function increaseQuantity(id, e) {
+  const card = getCard();
+  if (!card) {
+    return;
+  }
+  const cardArray = JSON.parse(card);
+  const book = cardArray.find((item) => item.id == id);
+  if (!book) {
+    return;
+  }
+  const qunatity = e.value;
+  book.quantity = qunatity;
+
+  const totalPriceEl = document.getElementById("total-price-" + id);
+  book.total = qunatity * book.price;
+  totalPriceEl.innerText = book.total;
+  document.cookie = "card=" + JSON.stringify(cardArray);
+  bucket();
+  updateTotalPrice();
+}
+
+//card sayfası toplam fiyatı güncelleme
+function updateTotalPrice(){
+  const prices = document.getElementsByClassName("book-total-price");
+  let totalPrice = 0;
+  for(let i = 0; i < prices.length; i++){
+    totalPrice += parseInt(prices[i].innerText);
+  }
+  if (document.getElementById("total-price")) {
+    document.getElementById("total-price").innerText = totalPrice + " ₺";
+  }
 }

@@ -101,10 +101,28 @@ class Home extends BaseController
 
         return view('yazarlar_grup', $data);
     }
-
     public function lolla_kids(): string
     {
         $data["title"] = "Mendirek Dükkan | Lolla Kids";
         return view("lolla_kids", $data);
+    }
+    public function kitaplar($filter): string
+    {
+        if ($filter != "kampanya" && $filter != "yeni" && $filter != "cok_satan") {
+            return show_404();
+        }
+        $query =
+            $this->db->query('SELECT * FROM books WHERE category = "' . $this->db->escapeString($filter) . '"');
+        $books = $query->getResult();
+       
+        $data["books"] = $books;
+        $data["filter"] = $filter;
+        if ($filter == "kampanya") {
+            $data["title"] = "Mendirek Dükkan | Kampanya";
+            $data["header"] = "Kampanyalı ürünler";
+            $data["empty_message"] = "Kampanyalı ürün bulunamadı.";
+        }
+        
+        return view("kitaplar", $data);
     }
 }
