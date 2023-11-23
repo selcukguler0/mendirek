@@ -22,6 +22,15 @@ class Home extends BaseController
         $data["most_sales"] = array_slice($books, 30, count($books));
         $data["title"] = "Mendirek Dükkan | Ana Sayfa";
 
+        $data["mainslider"] = [
+            ["img"=>"/slides/1.jpg","url"=>"/yazar/9"],
+            ["img"=>"/slides/2.jpg","url"=>"/kitap/13"],
+            ["img"=>"/slides/3.jpg","url"=>"/kitap/30"],
+            ["img"=>"/slides/4.jpg","url"=>"/yazar/19"],
+            ["img"=>"/slides/5.jpg","url"=>"/kitap/12"],
+            ["img"=>"/slides/6.jpg","url"=>"/kitap/41"],
+        ];
+
         return view('home', $data);
     }
     public function hakkimizda(): string
@@ -101,6 +110,23 @@ class Home extends BaseController
 
         return view('yazarlar_grup', $data);
     }
+    public function yazar($id): string
+    {
+        $query =
+            $this->db->query('SELECT * FROM authors WHERE id = "' . $this->db->escapeString($id) . '"');
+        $author = $query->getRow();
+        if (!$author) {
+            return show_404();
+        }
+        $query =
+            $this->db->query('SELECT * FROM books WHERE author = "' . $this->db->escapeString($author->name) . '"');
+        $books = $query->getResult();
+
+        $data["books"] = $books;
+        $data["author"] = $author;
+        $data["title"] = "Mendirek Dükkan | Yazar";
+        return view("yazar", $data);
+    }
     public function lolla_kids(): string
     {
         $data["title"] = "Mendirek Dükkan | Lolla Kids";
@@ -114,7 +140,7 @@ class Home extends BaseController
         $query =
             $this->db->query('SELECT * FROM books WHERE category = "' . $this->db->escapeString($filter) . '"');
         $books = $query->getResult();
-       
+
         $data["books"] = $books;
         $data["filter"] = $filter;
         if ($filter == "kampanya") {
@@ -122,7 +148,28 @@ class Home extends BaseController
             $data["header"] = "Kampanyalı ürünler";
             $data["empty_message"] = "Kampanyalı ürün bulunamadı.";
         }
-        
+
         return view("kitaplar", $data);
+    }
+    public function kitap($id): string
+    {
+        $query = $this->db->table('books')
+            ->select('books.*, authors.id AS author_id')
+            ->join('authors', 'books.author = authors.name')
+            ->where('books.id', $id);
+
+        $book = $query->get()->getRow();
+        $data["book"] = $book;
+        
+        if (!$book) {
+            return show_404();
+        }
+        $data["author_id"] = $book->author_id;
+        $query2 = $this->db->query('SELECT * FROM books WHERE author = "' . $book->author . '" AND id != ' . $this->db->escapeString($id) . ' ORDER BY RAND() LIMIT 10');
+        $data["books"] = $query2->getResult();
+        $data["title"] = "Mendirek Dükkan | " . $book->name;
+
+        // return json_encode($data);
+        return view("kitap", $data);
     }
 }

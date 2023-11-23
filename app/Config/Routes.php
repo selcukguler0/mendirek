@@ -11,11 +11,13 @@ $routes->get('/', 'Home::index');
 $routes->get('/hakkimizda', 'Home::hakkimizda');
 $routes->get('/iletisim', 'Home::iletisim');
 $routes->get('/search', 'Home::search');
+$routes->get('/yazar/(:any)', 'Home::yazar/$1');
 $routes->get('/yazarlar', 'Home::yazarlar');
 $routes->get('/yazarlar/ara', 'Home::yazarlar_ara');
 $routes->get('/yazarlar/(:any)', 'Home::yazarlar_grup/$1');
 $routes->get('/lolla-kids', 'Home::lolla_kids');
 $routes->get('/kitaplar/(:any)', 'Home::kitaplar/$1');
+$routes->get('/kitap/(:any)', 'Home::kitap/$1');
 
 // User
 $routes->match(['get', 'post'], '/login', 'User::login');

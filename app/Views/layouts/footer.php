@@ -45,7 +45,22 @@
                             <li><a href="/hakkimizda"><span>Hakkımızda</span></a>
 
                             </li>
-                            <li><a href="/iletisim"><span>İletişim</span></a>
+                            <li><a href="/forgot-pass"><span>İletişim</span></a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                       <span>Üyelik İşlemleri</span>
+                        <ul>
+                            <li><a href="/login"><span>Üye Girişi</span></a>
+
+                            </li>
+                            <li><a href="/register"><span>Üye Ol</span></a>
+
+                            </li>
+                            <li><a href="/iletisim"><span>Şifremi Unuttum</span></a>
 
                             </li>
 
@@ -75,4 +90,7 @@
                 </div> -->
 </footer>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/combine.js"></script>
+<script src="/js/card.js"></script>

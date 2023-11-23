@@ -4,24 +4,42 @@ window.onload = function () {
 };
 
 function removeFromCart(id) {
-  const card = localStorage.getItem("card");
+  const card = getCard();
   if (!card) {
     return;
   }
   const cardArray = JSON.parse(card);
-  const book = cardArray.find((item) => item.id === id);
+  const book = cardArray.find((item) => item.id == id);
   if (!book) {
     return;
   }
-  if (book.quantity === 1) {
-    const index = cardArray.indexOf(book);
-    cardArray.splice(index, 1);
-  } else {
-    book.quantity--;
-  }
-  localStorage.setItem("card", JSON.stringify(cardArray));
-  console.log(localStorage.getItem("card"));
+  const index = cardArray.indexOf(book);
+  cardArray.splice(index, 1);
+  setDocumentCookie(cardArray)
   bucket();
+  window.location.reload();
+}
+
+function removeFromCartMulti(){
+  const card = getCard();
+  if (!card) {
+    return;
+  }
+  const cardArray = JSON.parse(card);
+  const books = document.getElementsByClassName("remove-checkbox");
+  for (let i = 0; i < books.length; i++) {
+    if(books[i].checked){
+      const book = cardArray.find((item) => item.id == books[i].value);
+      if (!book) {
+        return;
+      }
+      const index = cardArray.indexOf(book);
+      cardArray.splice(index, 1);
+    }
+  }
+  setDocumentCookie(cardArray)
+  bucket();
+  window.location.reload();
 }
 
 function clearCart() {
@@ -58,6 +76,12 @@ function addToCart(book) {
   const price = book.getAttribute("book-price") || 100;
   const image = book.getAttribute("book-img");
   let card = getCard();
+
+  Toastify({
+    text: "Kitap sepete eklendi",
+    duration: 3000,
+  }).showToast();
+
   if (!card) {
     const book = {
       id,
@@ -67,17 +91,14 @@ function addToCart(book) {
       quantity: 1,
       total: price,
     };
-    document.cookie =
-      "card=" +
-      JSON.stringify([book]) +
-      ";expires=Thu, 01 Jan 2030 00:00:00 UTC;";
+    setDocumentCookie([book]);
     bucket();
   } else {
     const cardArray = JSON.parse(card);
     const book = cardArray.find((item) => item.id === id);
     if (book) {
       book.quantity++;
-      document.cookie = "card=" + JSON.stringify(cardArray);
+      setDocumentCookie(cardArray)
       bucket();
       return;
     }
@@ -89,7 +110,7 @@ function addToCart(book) {
       quantity: 1,
       total: (price * book?.quantity) | price,
     });
-    document.cookie = "card=" + JSON.stringify(cardArray);
+    setDocumentCookie(cardArray)
     bucket();
   }
 }
@@ -126,19 +147,26 @@ function increaseQuantity(id, e) {
   const totalPriceEl = document.getElementById("total-price-" + id);
   book.total = qunatity * book.price;
   totalPriceEl.innerText = book.total;
-  document.cookie = "card=" + JSON.stringify(cardArray);
+  setDocumentCookie(cardArray)
   bucket();
   updateTotalPrice();
 }
 
 //card sayfası toplam fiyatı güncelleme
-function updateTotalPrice(){
+function updateTotalPrice() {
   const prices = document.getElementsByClassName("book-total-price");
   let totalPrice = 0;
-  for(let i = 0; i < prices.length; i++){
+  for (let i = 0; i < prices.length; i++) {
     totalPrice += parseInt(prices[i].innerText);
   }
   if (document.getElementById("total-price")) {
     document.getElementById("total-price").innerText = totalPrice + " ₺";
   }
+}
+
+function setDocumentCookie(cardArray) {
+  document.cookie =
+    "card=" +
+    JSON.stringify(cardArray) +
+    ";expires=Thu, 01 Jan 2030 00:00:00 UTC;path=/;";
 }

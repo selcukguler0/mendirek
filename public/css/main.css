@@ -68,7 +68,7 @@
   font-size: 0.8em;
 }
 .Cart-icon i {
-  color: #777;
+  color: white;
   font-size: 2em;
   margin-right: 5px;
 }
@@ -151,7 +151,7 @@
   border-radius: 5px;
 }
 .la-shopping-cart {
-  color: white!important;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .button_cart_delete {
@@ -4403,6 +4403,10 @@ textarea.form-control {
 .tabs_view_splitter_nav .Carousel-wrapper {
   overflow-x: hidden;
 }
+.Carousel-wrapper.slide-wrapper{
+  position: relative;
+  padding: 0 70px;
+}
 .Box.box_prd_slide .Carousel.slick-noslider .slick-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4498,5 +4502,8 @@ textarea.form-control {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .Carousel-wrapper.slide-wrapper{
+    padding: 0;
   }
 }

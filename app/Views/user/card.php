@@ -62,8 +62,8 @@
                                     </span>
                                 </div>
 
-                                <form action="/cart" method="post" name="list_frm" class="list_form mt-3">
-                                    <?php if (isset($card)) : ?>
+                                <div name="list_frm" class="list_form mt-3">
+                                    <?php if (isset($card) && count($card) > 0) : ?>
                                         <table class="table cart_list_table table-bordered">
                                             <thead class="rsp-hide-538">
                                                 <tr>
@@ -94,7 +94,7 @@
                                                     <tr class="cart-items" data-prd-id="48" data-prd-name="<?php echo $book['name']; ?>" data-barcode="" data-quantity="1" data-final-price="" data-total-price="">
                                                         <td class="rsp-hide-538">
                                                             <div class="form-group form-check">
-                                                                <input class="form-check-input toggle" type="checkbox" name="delete[]" id="delete0" value="545874">
+                                                                <input class="form-check-input toggle remove-checkbox" type="checkbox" value="<?php echo $book['id']; ?>">
                                                             </div>
                                                         </td>
                                                         <td>
@@ -120,7 +120,7 @@
 
                                                             <div class="buttons">
                                                                 <!-- <a class="btn btn-light btn-sm add_to_fav_link" href="/index.php?p=Favorites&amp;add=48&amp;fav_type=prd&amp;cart=1">Favorilerime Ekle</a> -->
-                                                                <a class="btn btn-light btn-sm del_link" href="#">Sil</a>
+                                                                <button class="btn btn-light btn-sm" onclick="removeFromCart(<?php echo $book['id']; ?>)">Sil</button>
                                                             </div>
                                                         </td>
 
@@ -143,7 +143,7 @@
                                         </table>
                                         <div>
                                             <div class="d-flex align-items-center">
-                                                <input type="submit" name="del" id="del" class="btn btn-danger btn-sm button_delete button_cart_delete" value="Sil">
+                                                <input type="button" onclick="removeFromCartMulti()" class="btn btn-danger btn-sm" value="Sil">
                                                 <div class="ml-auto">
                                                     <span>Ürün Toplamları:&nbsp;</span>
                                                     <b id="total-price">1000 ₺</b>
@@ -163,14 +163,11 @@
                                     <?php else : ?>
                                         <div class="alert alert-danger mt-4">Sepetinizde ürün bulunmuyor</div>
                                     <?php endif; ?>
-                                </form>
-
-
-                                <br>
-
+                                    </form>
+                                    <br>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
                 </main>

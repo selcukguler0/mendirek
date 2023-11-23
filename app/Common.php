@@ -16,5 +16,6 @@
 
 function show_404()
 {
-    return view('errors/404');
+    $data["title"] = "Mendirek Dükkan | 404";
+    return view('errors/404', $data);
 }

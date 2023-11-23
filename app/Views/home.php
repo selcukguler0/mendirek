@@ -17,12 +17,12 @@
                                 <div class="container">
                                     <div class="Box box_prd box_prd_slide">
                                         <div class="Box-content" style="margin-top: 20px;">
-                                            <div class="Carousel-wrapper" style="padding: 0 70px;position: relative;">
+                                            <div class="Carousel-wrapper slide-wrapper">
                                                 <div class="swiper mainSwiper" style="height: fit-content;">
                                                     <div class="swiper-wrapper">
-                                                        <?php foreach ($books as $book) : ?>
+                                                        <?php foreach($mainslider as $slider) : ?>
                                                             <div class="swiper-slide" style="display: flex;justify-content: center;">
-                                                                <img style="width: 100%;height: auto;max-width: 200px;aspect-ratio: 100/87;" src='/img/books/<?php echo $book->img; ?>' />
+                                                                <a href="<?php echo $slider["url"] ?>"> <img style="width: 100%;height: auto;" src='<?php echo $slider["img"] ?>' /></a>
                                                             </div>
                                                         <?php endforeach ?>
                                                     </div>
@@ -46,7 +46,7 @@
                                 <div class="container">
                                     <div class="Box box_prd box_prd_slide">
                                         <div class="Box-header">
-                                            <a href="#">Kampanyalı Ürünler</a>
+                                            <a href="/kitaplar/kampanya">Kampanyalı Ürünler</a>
                                         </div>
                                         <div class="Box-content" style="margin-top: 20px;">
                                             <div class="Carousel-wrapper" style="padding: 0 70px;position: relative;">

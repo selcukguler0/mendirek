@@ -101,7 +101,7 @@
                                             <ul class="list-group list-group-flush pub-items">
                                                 <?php foreach ($authors as $author) : ?>
                                                     <li class="list-group-item d-flex align-items-center py-1 pub-item">
-                                                        <a title="<?php echo $author->name ?>" href="#">
+                                                        <a title="<?php echo $author->name ?>" href="/yazar/<?php echo $author->id ?>">
                                                             <?php echo $author->name ?>
                                                         </a>
                                                         <div class="ml-auto d-flex">
