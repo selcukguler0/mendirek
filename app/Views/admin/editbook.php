@@ -5,6 +5,8 @@
 </head>
 
 <body class="admin">
+    <?php echo view("admin/layouts/header") ?>
+
     <div class="wrapper editbook mt-3">
         <?php if (isset($success)) : ?>
             <div style="margin-top: 20px;" class="alert alert-success" role="alert">
@@ -36,7 +38,7 @@
                 </div>
                 <div class="form-group col-6">
                     <label for="price">Fiyat</label>
-                    <input type="text" class="form-control" id="price" name="price" placeholder="Fiyat" value="<?php echo $book["price"]; ?>">
+                    <input type="number" class="form-control" id="price" name="price" placeholder="Fiyat" value="<?php echo $book["price"]; ?>">
                 </div>
             </div>
             <div class="row">
@@ -53,6 +55,20 @@
                 <div class="form-group col-6">
                     <label for="type">Roman Türü</label>
                     <input type="text" class="form-control" id="type" name="type" placeholder="Roman Türü" value="<?php echo $book["type"]; ?>">
+                </div>
+                <div class="form-group col-6">
+                    <label for="code">Ürün Kodu</label>
+                    <input type="text" class="form-control" id="code" name="code" placeholder="Ürün Kodu" value="<?php echo $book["code"]; ?>">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="stock">Stok</label>
+                    <input type="number" class="form-control" id="stock" name="stock" placeholder="Stok" value="<?php echo $book["stock"]; ?>">
+                </div>
+                <div class="form-group col-6">
+                    <label for="page">Sayfa Sayısı</label>
+                    <input type="number" class="form-control" id="page" name="page" placeholder="Sayfa Sayısı" value="<?php echo $book["page"]; ?>">
                 </div>
             </div>
             <div class="row">

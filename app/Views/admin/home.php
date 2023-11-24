@@ -5,12 +5,8 @@
 </head>
 
 <body class="admin">
-    <div style="display: flex;justify-content: end;width: 100%;margin-top: 20px">
-        <div style="margin-right: 10px;">
-            <span><b>Giriş Yapılan Kullanıcı: </b><?php echo $user; ?> </span> <br>
-            <a href="/admin/logout" style="width: 100%; padding: 3px!important;max-width: 170px;float: right;" class="btn btn-danger">Çıkış Yap</a>
-        </div>
-    </div>
+    <?php echo view("admin/layouts/header") ?>
+    
     <?php if (isset($success)) : ?>
         <div style="margin-top: 20px;" class="alert alert-success" role="alert">
             <?php echo $success . " başarıyla kayıt edildi." ?>

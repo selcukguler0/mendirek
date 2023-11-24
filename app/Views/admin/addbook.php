@@ -5,6 +5,8 @@
 </head>
 
 <body class="admin">
+    <?php echo view("admin/layouts/header") ?>
+
     <div class="wrapper addbook mt-3">
         <form action="/admin/addbook" method="post" enctype="multipart/form-data">
             <?= csrf_field() ?>
@@ -22,11 +24,16 @@
             <div class="row">
                 <div class="form-group col-6">
                     <label for="author">Yazar</label>
-                    <input type="text" class="form-control" id="author" name="author" placeholder="Yazar">
+                    <input name="author" class="form-control" list="europe-countries" placeholder="Yazar">
+                    <datalist id="europe-countries">
+                        <?php foreach ($authors as $author) : ?>
+                            <option value="<?php echo $author["name"]; ?>">
+                            <?php endforeach; ?>
+                    </datalist>
                 </div>
                 <div class="form-group col-6">
                     <label for="price">Fiyat</label>
-                    <input type="text" class="form-control" id="price" name="price" placeholder="Fiyat">
+                    <input type="number" class="form-control" id="price" name="price" placeholder="Fiyat">
                 </div>
             </div>
             <div class="row">
@@ -44,6 +51,20 @@
                     <label for="type">Roman Türü</label>
                     <input type="text" class="form-control" id="type" name="type" placeholder="Roman Türü">
                 </div>
+                <div class="form-group col-6">
+                    <label for="code">Ürün Kodu</label>
+                    <input type="text" class="form-control" id="code" name="code" placeholder="Ürün Kodu">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="stock">Stok</label>
+                    <input type="text" class="form-control" id="stock" name="stock" placeholder="Roman Türü">
+                </div>
+                <div class="form-group col-6">
+                    <label for="page">Sayfa Sayısı</label>
+                    <input type="number" class="form-control" id="page" name="page" placeholder="Sayfa Sayısı">
+                </div>
             </div>
             <div class="row">
                 <div class="form-group col-6">
@@ -58,6 +79,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="/datatables/jQuery-3.7.0/jquery-3.7.0.min.js"></script>
     <script src="/js/adminedit.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,3 @@
-console.log(dataSet);
-console.log(typeof dataSet);
-
 var table = new DataTable("#example", {
   columns: [
     { data: "id", title: "ID" },
@@ -44,13 +41,6 @@ var table = new DataTable("#example", {
       extend: "excelHtml5",
       text: "Exel'e Aktar",
       className: "excelButton",
-    },
-    {
-      text: "Yeni Kitap Ekle",
-      className: "addNewBookButton",
-      action: function () {
-        window.location.href = "/admin/addbook";
-      },
     },
   ],
   scrollX: true,
