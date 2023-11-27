@@ -1,12 +1,12 @@
 var table = new DataTable("#example", {
   columns: [
     { data: "id", title: "ID" },
+    { data: "code", title: "Ürün Kodu" },
     { data: "name", title: "Kitap İsmi" },
     { data: "author", title: "Yazar" },
     { data: "price", title: "Fiyat" },
     { data: "language", title: "Basım Dili" },
-    { data: "cover", title: "Cilt Bilgisi" },
-    { data: "type", title: "Roman Türü" },
+    { data: "stock", title: "Stok" },
     { data: null, title: "Düzenle" },
     { data: null, title: "Sil" },
   ],
@@ -21,7 +21,7 @@ var table = new DataTable("#example", {
           return "";
         }
       },
-      targets: 3,
+      targets: 4,
     },
     {
       data: null,
@@ -35,7 +35,7 @@ var table = new DataTable("#example", {
       targets: -1,
     },
   ],
-  dom: "<'row'<'col-sm-12 col-md-6'B><'col-sm-12 col-md-6'<'float-right filter'f>>>t<'row'<'col-sm-6'p><'col-sm-6'<'float-right'l>>>",
+  dom: "<'row align-items-center mb-3'<'col-sm-12 col-md-6'B><'col-sm-12 col-md-6'<'float-right filter'f>>>t<'row'<'col-sm-6'p><'col-sm-6'<'float-right'l>>>",
   buttons: [
     {
       extend: "excelHtml5",

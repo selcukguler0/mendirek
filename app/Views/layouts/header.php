@@ -76,6 +76,8 @@
                 </li>
                 <li><a href="/kitaplar/kampanya"><span>Kampanyalı Ürünler</span></a>
                 </li>
+                <li><a href="/kitaplar/cok_satan"><span>Çok Satan Ürünler</span></a>
+                </li>
                 <li><a href="/yazarlar"><span>Yazarlar</span></a>
                 </li>
                 <li><a href="/lolla-kids"><span>Lolla Kids</span></a>

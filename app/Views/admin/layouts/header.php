@@ -2,7 +2,7 @@
     <div class="container Header-container">
         <div class="Header-logo">
             <i id="HeaderMenuOpen" class="la la-bars"></i>
-            <a href="/">
+            <a href="/admin">
                 <img src="/img/logo.png" alt="Mendirek">
             </a>
             <i id="HeaderSearchOpen" class="la la-search"></i>

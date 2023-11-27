@@ -21,7 +21,7 @@
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
                                     <a itemprop="item" href="/kitaplar/<?php echo $filter ?>">
-                                        <span itemprop="name"><?php echo $filter ?></span>
+                                        <span itemprop="name"><?php echo $breadcrumb ?></span>
                                     </a>
                                     <meta itemprop="position" content="2">
                                 </li>

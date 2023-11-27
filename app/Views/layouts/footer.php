@@ -1,5 +1,3 @@
-
-
 <footer class="Footer">
     <div id="dump"></div>
     <div class="container">
@@ -37,6 +35,20 @@
             </div>
             <div class="Footer-menu">
                 <ul>
+                    <li>
+                        <ul>
+                            <li><a href="/"><span>Ana Sayfa</span></a>
+
+                            </li>
+                            <li><a href="/kitaplar/kampanya"><span>Kampanyalı Ürünler</span></a>
+
+                            </li>
+                            <li><a href="/#"><span>Kargo Takibi</span></a>
+
+                            </li>
+
+                        </ul>
+                    </li>
                     <li><a href="/iletisim"><span>Müşteri Hizmetleri</span></a>
                         <ul>
                             <li><a href="/yazarlar"><span>Yazarlar</span></a>
@@ -52,7 +64,7 @@
                         </ul>
                     </li>
                     <li>
-                       <span>Üyelik İşlemleri</span>
+                        <span>Üyelik İşlemleri</span>
                         <ul>
                             <li><a href="/login"><span>Üye Girişi</span></a>
 
@@ -60,7 +72,7 @@
                             <li><a href="/register"><span>Üye Ol</span></a>
 
                             </li>
-                            <li><a href="/iletisim"><span>Şifremi Unuttum</span></a>
+                            <li><a href="/forgot-pass"><span>Şifremi Unuttum</span></a>
 
                             </li>
 

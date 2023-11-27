@@ -55,6 +55,7 @@ class Admin extends BaseController
                 'code' => $this->request->getPost('code'),
                 'stock' => $this->request->getPost('stock'),
                 'page' => $this->request->getPost('page'),
+                'category' => $this->request->getPost('category'),
             ];
     
             $file = $this->request->getFile('fileInput');
@@ -74,13 +75,18 @@ class Admin extends BaseController
             $builder->update($data);
             return redirect()->to(base_url() . "/admin/editbook/" . $id . "?success");
         }
-
-        $query = $this->db->query("SELECT * FROM books where id = ?", [$this->db->escapeString($id)]);
-        $data["book"] = $query->getResultArray()[0];
-        $data["title"] = "Mendirek Dükkan | Admin";
         if (isset($_GET["success"])) {
             $data["success"] = $_GET["success"];
         }
+        
+        $query = $this->db->query("SELECT name FROM authors");
+        $data["authors"] = $query->getResult();
+
+        $query = $this->db->query("SELECT * FROM books where id = ?", [$this->db->escapeString($id)]);
+        $data["book"] = $query->getResultArray()[0];
+
+        $data["title"] = "Mendirek Dükkan | Admin";
+        
         return view('admin/editbook', $data);
     }
     public function addbook()
@@ -100,6 +106,7 @@ class Admin extends BaseController
                 'code' => $this->request->getPost('code'),
                 'stock' => $this->request->getPost('stock'),
                 'page' => $this->request->getPost('page'),
+                'category' => $this->request->getPost('category'),
             ];
 
             $query = $this->db->query("SELECT * FROM authors where name = ?", [$this->db->escapeString($data["author"])]);
@@ -127,8 +134,8 @@ class Admin extends BaseController
             return redirect()->to(base_url() . 'admin?success=' . $data["name"]);
         }
 
-        $query = $this->db->query("SELECT * FROM authors");
-        $data["authors"] = $query->getResultArray();
+        $query = $this->db->query("SELECT name FROM authors");
+        $data["authors"] = $query->getResult();
 
         $data["title"] = "Mendirek Dükkan | Admin";
         return view('admin/addbook', $data);

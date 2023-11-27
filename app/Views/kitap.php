@@ -110,7 +110,7 @@
 
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_barcode">
                                             <div class="prd_fields_label">Stok Kodu:</div>
-                                            <div class="prd_fields_text">EPH00036</div>
+                                            <div class="prd_fields_text"><?php echo $book->code; ?></div>
                                         </div>
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_size">
                                             <div class="prd_fields_label">Boyut:</div>
@@ -134,10 +134,10 @@
                                         </div>
 
 
-                                        <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_illustrator">
+                                        <!-- <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_illustrator">
                                             <div class="prd_fields_label">Entegra Ürün Kodu:</div>
                                             <div class="prd_fields_text">EPH00036</div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_cover_type">
                                             <div class="prd_fields_label">Kapak Türü:</div>

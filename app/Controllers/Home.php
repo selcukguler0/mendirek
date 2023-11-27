@@ -132,7 +132,8 @@ class Home extends BaseController
         $data["title"] = "Mendirek Dükkan | Lolla Kids";
         return view("lolla_kids", $data);
     }
-    public function kitaplar($filter): string
+    //kategori
+    public function kategori_kitaplar($filter): string
     {
         if ($filter != "kampanya" && $filter != "yeni" && $filter != "cok_satan") {
             return show_404();
@@ -146,10 +147,17 @@ class Home extends BaseController
         if ($filter == "kampanya") {
             $data["title"] = "Mendirek Dükkan | Kampanya";
             $data["header"] = "Kampanyalı ürünler";
+            $data["breadcrumb"] = "Kampanya";
             $data["empty_message"] = "Kampanyalı ürün bulunamadı.";
         }
+        else if ($filter == "cok_satan") {
+            $data["title"] = "Mendirek Dükkan | Çok Satanlar";
+            $data["header"] = "Çok Satan ürünler";
+            $data["breadcrumb"] = "Çok Satanlar";
+            $data["empty_message"] = "Çok Satan kategorisinde ürün bulunamadı.";
+        }
 
-        return view("kitaplar", $data);
+        return view("kategori_kitaplar", $data);
     }
     public function kitap($id): string
     {

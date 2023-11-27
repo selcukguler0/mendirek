@@ -16,7 +16,7 @@ $routes->get('/yazarlar', 'Home::yazarlar');
 $routes->get('/yazarlar/ara', 'Home::yazarlar_ara');
 $routes->get('/yazarlar/(:any)', 'Home::yazarlar_grup/$1');
 $routes->get('/lolla-kids', 'Home::lolla_kids');
-$routes->get('/kitaplar/(:any)', 'Home::kitaplar/$1');
+$routes->get('/kitaplar/(:any)', 'Home::kategori_kitaplar/$1');
 $routes->get('/kitap/(:any)', 'Home::kitap/$1');
 
 // User
