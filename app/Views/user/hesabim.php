@@ -6,7 +6,7 @@
 
 <body>
     <?php echo view('layouts/header'); ?>
-    <div class="page page_0 page_home  ">
+    <div class="page page_0 page_home">
         <div class="container-page container-fluid container_logged_out">
             <div class="Content-wrapper">
                 <main class="Content">
@@ -85,7 +85,7 @@
                                                     Siparişlerim
                                                 </option>
 
-                                                <option value="?p=Cart">
+                                                <option value="/card">
                                                     Sepetim
                                                 </option>
 

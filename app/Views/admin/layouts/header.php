@@ -27,6 +27,8 @@
             <ul>
                 <li><a href="/admin/addbook"><span>Kitap Ekle</span></a>
                 </li>
+                <li><a href="/admin/news"><span>Bülten Ekle/Düzenle</span></a>
+                </li>
             </ul>
 
         </div>

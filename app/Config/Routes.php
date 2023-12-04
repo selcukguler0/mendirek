@@ -18,6 +18,8 @@ $routes->get('/yazarlar/(:any)', 'Home::yazarlar_grup/$1');
 $routes->get('/lolla-kids', 'Home::lolla_kids');
 $routes->get('/kitaplar/(:any)', 'Home::kategori_kitaplar/$1');
 $routes->get('/kitap/(:any)', 'Home::kitap/$1');
+$routes->get('/bulten', 'Home::bultenler');
+$routes->get('/bulten/(:any)', 'Home::bulten/$1');
 
 // User
 $routes->match(['get', 'post'], '/login', 'User::login');
@@ -37,6 +39,12 @@ $routes->match(['get', 'post'], '/admin/addbook', 'Admin::addbook');
 $routes->post('/admin/deletebook', 'Admin::deletebook');
 $routes->match(['get', 'post'], '/admin/login', 'Admin::login');
 $routes->get('/admin/logout', 'Admin::logout');
+//--news
+$routes->get('/admin/news', 'Admin::news');
+$routes->get('/admin/editnews/(:any)', 'Admin::editnews/$1');
+$routes->post('/admin/editnews', 'Admin::editnews/$1');
+$routes->post('/admin/deletenews', 'Admin::deletenews');
+$routes->match(['get', 'post'], '/admin/addnews', 'Admin::addnews');
 
 // 404
 $routes->set404Override(function () {

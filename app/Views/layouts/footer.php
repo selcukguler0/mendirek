@@ -7,11 +7,10 @@
                     <a href="/"><img src="/img/logo.png" alt="Mendirek Dükkan" draggable="false"></a>
                 </div>
                 <div class="Footer-content-info">
-                    <span class="firm_title">Lorem ipsum dolor sit amet consum.</span>
-                    <span class="firm_address">Lorem ipsum dolor sit amet.</span>
+                    <span class="firm_title">Mendirek Dükkan</span>
+                    <span class="firm_address">Maltepe Mah. Davutpaşa Cad No: 83 Zeytinburnu/İstanbul</span>
                     <span class="firm_phone">
-                        <a href="tel:4440454">444 0 xxx</a> &nbsp;&nbsp;&nbsp;<a href="tel:xxx">+xxx</a> </span>
-                    <span>xxxx</span>
+                        <a href="tel:02125016770">0212 501 67 70</a></span>
                     <span>© 2023 Mendirek Dükkan</span>
                 </div>
                 <div class="Footer-content-social">

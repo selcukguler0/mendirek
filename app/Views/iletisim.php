@@ -42,13 +42,11 @@
                                     <div class="Contact-item">
                                         <div class="contact_info">
                                             <div class="box_p">
-                                                <div class="cfg_firm_name">Name</div>
-                                                <div class="cfg_firm_address"><b>Adres</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, tempora.</div>
-                                                <div class="cfg_firm_phone1"><b>Tel</b>: <a href="tel:4440454">444 0 xx</a></div>
-                                                <div class="cfg_firm_phone2"><b>Whatsapp</b>: <a href="tel:5322083345">+xxx</a></div>
+                                                <!-- <div class="cfg_firm_name">Name</div> -->
+                                                <div class="cfg_firm_address"><b>Adres</b>: Maltepe Mah. Davutpaşa Cad No: 83 Zeytinburnu/İstanbul</div>
+                                                <div class="cfg_firm_phone1"><b>Tel</b>: <a href="tel:02125016770">0212 501 67 70</a></div>
                                                 <div class="cfg_firm_email"><b>Email</b>: eticaret@xx.com</div>
                                             </div>
-
                                         </div>
 
 

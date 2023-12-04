@@ -23,12 +23,12 @@ class Home extends BaseController
         $data["title"] = "Mendirek Dükkan | Ana Sayfa";
 
         $data["mainslider"] = [
-            ["img"=>"/slides/1.jpg","url"=>"/yazar/9"],
-            ["img"=>"/slides/2.jpg","url"=>"/kitap/13"],
-            ["img"=>"/slides/3.jpg","url"=>"/kitap/30"],
-            ["img"=>"/slides/4.jpg","url"=>"/yazar/19"],
-            ["img"=>"/slides/5.jpg","url"=>"/kitap/12"],
-            ["img"=>"/slides/6.jpg","url"=>"/kitap/41"],
+            ["img" => "/slides/1.jpg", "url" => "/yazar/9"],
+            ["img" => "/slides/2.jpg", "url" => "/kitap/13"],
+            ["img" => "/slides/3.jpg", "url" => "/kitap/30"],
+            ["img" => "/slides/4.jpg", "url" => "/yazar/19"],
+            ["img" => "/slides/5.jpg", "url" => "/kitap/12"],
+            ["img" => "/slides/6.jpg", "url" => "/kitap/41"],
         ];
 
         return view('home', $data);
@@ -149,8 +149,7 @@ class Home extends BaseController
             $data["header"] = "Kampanyalı ürünler";
             $data["breadcrumb"] = "Kampanya";
             $data["empty_message"] = "Kampanyalı ürün bulunamadı.";
-        }
-        else if ($filter == "cok_satan") {
+        } else if ($filter == "cok_satan") {
             $data["title"] = "Mendirek Dükkan | Çok Satanlar";
             $data["header"] = "Çok Satan ürünler";
             $data["breadcrumb"] = "Çok Satanlar";
@@ -168,7 +167,7 @@ class Home extends BaseController
 
         $book = $query->get()->getRow();
         $data["book"] = $book;
-        
+
         if (!$book) {
             return show_404();
         }
@@ -179,5 +178,26 @@ class Home extends BaseController
 
         // return json_encode($data);
         return view("kitap", $data);
+    }
+    public function bultenler(): string
+    {
+        $query = $this->db->query('SELECT * FROM news ORDER BY createdAt DESC');
+        $news = $query->getResult();
+        $data["news"] = $news;
+        $data["title"] = "Mendirek Dükkan | Bülten";
+        $data["empty_message"] = "Bülten bulunamadı.";
+        $data["header"] = "Bülten";
+        return view("bultenler", $data);
+    }
+    public function bulten($id): string
+    {
+        $query = $this->db->query('SELECT * FROM news WHERE id = ' . $this->db->escapeString($id));
+        $new = $query->getRow();
+        if (!$new) {
+            return show_404();
+        }
+        $data["new"] = $new;
+        $data["title"] = "Mendirek Dükkan | " . $new->title;
+        return view("bulten", $data);
     }
 }

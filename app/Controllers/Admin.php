@@ -156,6 +156,111 @@ class Admin extends BaseController
 
         return redirect()->to(base_url() . 'admin?deleted=' . $name);
     }
+    public function news(){
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'admin/login');
+        }
+
+        $query = $this->db->query("SELECT * FROM news");
+        $data["news"] = $query->getResultArray();
+        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["user"] = session()->get('admin');
+
+        if (isset($_GET["success"])) {
+            $data["success"] = $_GET["success"];
+        }
+        if (isset($_GET["deleted"])) {
+            $data["deleted"] = $_GET["deleted"];
+        }
+
+        return view('admin/news', $data);
+    }
+    public function addnews(){
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'admin/login');
+        }
+
+        if ($this->request->is("post")) {
+            $data = [
+                'title' => $this->request->getPost('title'),
+                'content' => $this->request->getPost('content'),
+            ];
+
+            $file = $this->request->getFile('fileInput');
+
+            if ($file->isValid() && !$file->hasMoved()) {
+                $newName = md5(uniqid()) . "." . $file->getExtension();
+
+                $file->move(FCPATH  . 'img/news', $newName);
+
+                $data['img'] = $newName;
+            }
+
+            $builder = $this->db->table('news');
+
+            $builder->insert($data);
+
+            return redirect()->to(base_url() . 'admin/addnews?success=' . $data["title"]);
+        }
+
+        $data["title"] = "Mendirek Dükkan | Admin";
+        return view('admin/addnews', $data);
+    }
+    public function editnews($id){
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'admin/login');
+        }
+
+        if ($this->request->is("post")) {
+            $data = [
+                'title' => $this->request->getPost('title'),
+                'content' => $this->request->getPost('content'),
+            ];
+
+            $file = $this->request->getFile('fileInput');
+
+            if ($file->isValid() && !$file->hasMoved()) {
+                $newName = md5(uniqid()) . "." . $file->getExtension();
+
+                $file->move(FCPATH  . 'img/news', $newName);
+
+                $data['img'] = $newName;
+            }
+
+            $id = $this->request->getPost('id');
+            $builder = $this->db->table('news');
+
+            $builder->where('id', $id);
+            $builder->update($data);
+            return redirect()->to(base_url() . "/admin/editnews/" . $id . "?success");
+        }
+        if (isset($_GET["success"])) {
+            $data["success"] = $_GET["success"];
+        }
+        
+        $query = $this->db->query("SELECT * FROM news where id = ?", [$this->db->escapeString($id)]);
+        $data["news"] = $query->getRow();
+
+        $data["title"] = "Mendirek Dükkan | Admin";
+        
+        return view('admin/editnews', $data);
+    }
+    public function deletenews()
+    {
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'admin/login');
+        }
+
+        $title = $this->request->getPost('title');
+        $id = $this->request->getPost('id');
+
+        $builder = $this->db->table('news');
+
+        $builder->where('id', $id);
+        $builder->delete();
+
+        return redirect()->to(base_url() . 'admin/news?deleted=' . $title);
+    }
     public function login()
     {
         if ($this->request->is("post")) {

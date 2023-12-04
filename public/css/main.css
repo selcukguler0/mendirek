@@ -915,6 +915,9 @@ textarea.form-control {
   display: -ms-flexbox;
   display: flex;
 }
+.page_home {
+  min-height: 600px;
+}
 .page_home .Content .mod_container,
 .page_prdview .Content .mod_container {
   margin: 20px 0;
@@ -1607,6 +1610,64 @@ textarea.form-control {
 }
 .Box--horizontal .Product-content .price_box {
   margin-bottom: 0;
+}
+.Box--horizontal .New {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 210px;
+}
+.Box--horizontal .New:hover {
+  -webkit-transform: none;
+  transform: none;
+}
+.Box--horizontal .New-image-wrapper {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-preferred-size: 130px;
+  flex-basis: 130px;
+}
+.Box--horizontal .New-image .cargo_paying,
+.Box--horizontal .New-image .new_icon {
+  display: none;
+}
+.Box--horizontal .New-image .prd_img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.Box--horizontal .New-content {
+  height: 100%;
+  padding: 0;
+  padding-left: 20px;
+  text-align: left;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-top: 0;
+}
+.Box--horizontal .New-content .name {
+  max-height: 45px;
+  margin-bottom: 5px;
+  line-height: 1.3em;
+}
+.Box--horizontal .New-content .publisher,
+.Box--horizontal .New-content .writer {
+  line-height: 1.5em;
+}
+.Box--horizontal .New-content .price_box {
+  margin-bottom: 0;
+}
+.New-content .title {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
 }
 .Box--horizontal .Box-footer {
   display: none;
