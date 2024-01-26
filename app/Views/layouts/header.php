@@ -71,12 +71,28 @@
                 </div>
                 <div class="cart_box_container"></div>
             </div>
-            <ul>
+            <ul class="">
                 <li><a href="/"><span>Anasayfa</span></a>
                 </li>
                 <li><a href="/kitaplar/kampanya"><span>Kampanyalı Ürünler</span></a>
                 </li>
                 <li><a href="/kitaplar/cok_satan"><span>Çok Satan Ürünler</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="category-dropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
+                        Kategoriler
+                    </a>
+
+                    <div class="dropdown-menu category-dropdown" aria-labelledby="category-dropdown">
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Türk Roman</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Dünya Roman</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Romantik</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Dünya Klasikleri</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Çocuk Kitapları</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Polisiye</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Bilim Kurgu</a>
+                        <a style="text-align: left;" class="dropdown-item" href="/kitaplar/kampanya">Fantastik</a>
+                    </div>
                 </li>
                 <li><a href="/bulten"><span>Bülten</span></a>
                 </li>
@@ -117,4 +133,3 @@
         </div>
     </nav>
 </header>
-

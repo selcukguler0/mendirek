@@ -30,6 +30,18 @@ $routes->get('/logout', 'User::logout');
 $routes->get('/verify-mail', 'User::verify_mail');
 $routes->get('/hesabim', 'User::hesabim');
 $routes->get('/card', 'User::card');
+$routes->match(["get", "post"],'/checkout', 'User::checkout');
+
+// Api
+$routes->get('/api/loadtowns/(:any)', 'Api::loadTowns/$1');
+
+// Iyzico
+// $routes->post('/iyzico/pay', 'Iyzico::payWithIyzico');
+$routes->post('/iyzico/bincontrol', 'Iyzico::binControl');
+$routes->post('/iyzico/start3DS', 'Iyzico::start3DS');
+$routes->post('/iyzico/check3D', 'Iyzico::check3D');
+//ödeme sayfası
+$routes->get('/iyzico/payout', 'Iyzico::payout');
 
 // Admin
 $routes->get('/admin', 'Admin::index');

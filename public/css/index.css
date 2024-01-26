@@ -10,7 +10,7 @@
 }
 .swiper-slide .price {
   text-align: center;
-  color: #ef6a2f;
+  color: #0068b3;
   font-weight: 600;
   font-size: 18px;
   margin-top: -8px;
@@ -18,9 +18,9 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  --swiper-navigation-color: #ef6a2f;
+  --swiper-navigation-color: #0068b3;
   top: var(--swiper-navigation-top-offset, 31%)!important;
-  color: #ef6a2f;
+  color: #0068b3;
 }
 .swiper-button-next-mainSwiper, .swiper-button-prev-mainSwiper {
   top: var(--swiper-navigation-top-offset, 50%)!important;

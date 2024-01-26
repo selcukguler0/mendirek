@@ -76,7 +76,7 @@
   width: 15px;
   height: 15px;
   font-size: 0.8em;
-  background-color: black!important;
+  background-color: black !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,7 +1085,7 @@ textarea.form-control {
 }
 .Header-logo img {
   vertical-align: middle;
-  max-width: 200px;
+  max-width: 150px;
   max-height: 65px;
   height: auto;
   width: auto;
@@ -1119,7 +1119,7 @@ textarea.form-control {
   margin-right: 5px;
 }
 .Header-menu {
-  background-color: white!important;
+  background-color: white !important;
 }
 .Header-menu ul {
   margin-bottom: 0;
@@ -1175,9 +1175,15 @@ textarea.form-control {
   cursor: pointer;
 }
 .orange-btn {
-  background-color: #f76e31;
+  background-color: #0068b3;
 }
 @media screen and (max-width: 768px) {
+  .nav-link.dropdown-toggle {
+    color: #fff!important;
+  }
+  .category-dropdown .dropdown-item {
+    color: #000!important;
+  }
   h1.contentHeader {
     font-size: 1.3em !important;
   }
@@ -1757,7 +1763,7 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
   .Header-menu {
-    background-color: white!important;
+    background-color: white !important;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     height: calc(100vh - 100px);
@@ -4464,7 +4470,7 @@ textarea.form-control {
 .tabs_view_splitter_nav .Carousel-wrapper {
   overflow-x: hidden;
 }
-.Carousel-wrapper.slide-wrapper{
+.Carousel-wrapper.slide-wrapper {
   position: relative;
   padding: 0 70px;
 }
@@ -4564,7 +4570,7 @@ textarea.form-control {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .Carousel-wrapper.slide-wrapper{
+  .Carousel-wrapper.slide-wrapper {
     padding: 0;
   }
 }

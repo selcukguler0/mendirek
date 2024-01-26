@@ -156,7 +156,9 @@
                                                     <a class="btn btn-sm btn-dark button_continue_shopping" href="/">
                                                         <span class="">Alışverişe Devam Et</span>
                                                     </a>
-                                                    <input name="checkout" type="submit" class="btn btn-sm btn-orange button_checkout" value="Sipariş ver">
+                                                    <button name="checkout" type="submit" class="btn btn-sm btn-orange button_checkout" onclick="window.location='/checkout'">
+                                                        <span class="">Sipariş Ver</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>

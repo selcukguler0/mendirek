@@ -37,11 +37,11 @@ class Filters extends BaseConfig
     public array $globals = [
         'before' => [
             // 'honeypot',
-            'csrf',
+            'csrf' => ['except' => ['/iyzico/*']]
             // 'invalidchars',
         ],
         'after' => [
-            'toolbar',
+            'toolbar' => ['except' => ['/iyzico/*']],
             // 'honeypot',
             // 'secureheaders',
         ],

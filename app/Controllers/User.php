@@ -9,7 +9,6 @@ class User extends BaseController
     public function __construct()
     {
         $this->db = db_connect();
-        session();
     }
     public function is_logged_in()
     {
@@ -40,6 +39,16 @@ class User extends BaseController
         $cookie = get_cookie('card');
         $data["card"] = json_decode($cookie, true);
         return view('user/card', $data);
+    }
+    //card sayfası sonrası bilgilerin doldurulduğu sayfa -- /checkout
+    public function checkout()
+    {
+        //tüm şehirleri cities tablosundan çek
+        $query = $this->db->query("SELECT * FROM cities");
+        $data["cities"] = $query->getResultArray();
+
+        $data["title"] = "Mendirek Dükkan | Ödeme";
+        return view('user/checkout', $data);
     }
 
     // LOGIN - REGISTER - FORGOT PASS - VERIFY MAIL - LOGOUT

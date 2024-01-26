@@ -6,16 +6,16 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta property="og:image" content="/img/logo.png" />
 <link rel="shortcut icon" href="/u/Mendirekdukkan/favicon.ico?v=992" type="image/x-icon">
-<link type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+<link type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <link type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
-<link type="text/css" href="/css/fancybox.css" rel="stylesheet">
+<!-- <link type="text/css" href="/css/fancybox.css" rel="stylesheet"> -->
 <link type="text/css" href="/css/main.css" rel="stylesheet">
 <link type="text/css" href="/css/index.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
     .banner_cookie {
         background: #333;
@@ -93,12 +93,12 @@
     /* color - orange */
     .Product .discount,
     .prd_view .pricebox .discount {
-        background-color: #EF6A2F;
+        background-color: #0068b3;
     }
 
     .Product-content .price_box .price_sale,
     .prd_view .pricebox_content .sale_price_row {
-        color: #EF6A2F;
+        color: #0068b3;
     }
 
     .Header-menu,
@@ -110,18 +110,18 @@
     .order_steps .ord_step_selected .ord_step_number,
     .member_nav a.active,
     .Product .list_number {
-        background-color: #EF6A2F;
+        background-color: #0068b3;
     }
 
     .Header-menu ul li ul {
-        background-color: #f76e31;
+        background-color: #0068b3;
     }
 
     .breadcrumb .breadcrumb-item.active a,
     .pagination .page-item .page-link,
     .prd_view h1.contentHeader,
     .letter_bar .letter_items a.dy_selected {
-        color: #EF6A2F;
+        color: #0068b3;
     }
 
     .pagination .page-item .page-link:focus {
@@ -132,13 +132,13 @@
     .btn-orange,
     .member_nav a.active,
     .Carousel .slick-dots li.slick-active {
-        border-color: #EF6A2F;
+        border-color: #0068b3;
     }
 
     .btn-orange:hover,
     .btn-orange:focus {
-        background-color: #f76e31;
-        border-color: #f76e31;
+        background-color: #0068b3;
+        border-color: #0068b3;
     }
 
     .btn-orange:focus,
@@ -156,29 +156,29 @@
     }
 
     .loading div {
-        border: 2px solid #EF6A2F;
-        border-color: #EF6A2F transparent transparent transparent;
+        border: 2px solid #0068b3;
+        border-color: #0068b3 transparent transparent transparent;
     }
 
     .tabs_view .nav a.active {
-        border-bottom: 2px solid #EF6A2F;
+        border-bottom: 2px solid #0068b3;
     }
 
     .order_steps .ord_step_number {
-        background-color: #f76e31;
+        background-color: #0068b3;
     }
 
     .Header-menu ul li:hover {
-        background-color: #f76e31;
+        background-color: #0068b3;
     }
 
     .Header-menu ul li ul li:hover {
-        background-color: #f76e31;
+        background-color: #0068b3;
     }
 
     @media screen and (max-width: 768px) {
         .Header-menu .container {
-            background-color: #EF6A2F;
+            background-color: #0068b3;
         }
     }
 
