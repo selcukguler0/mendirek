@@ -39,7 +39,7 @@ $routes->get('/api/loadtowns/(:any)', 'Api::loadTowns/$1');
 // $routes->post('/iyzico/pay', 'Iyzico::payWithIyzico');
 $routes->post('/iyzico/bincontrol', 'Iyzico::binControl');
 $routes->post('/iyzico/start3DS', 'Iyzico::start3DS');
-$routes->post('/iyzico/check3D', 'Iyzico::check3D');
+$routes->match(["get", "post"],'/iyzico/check3D', 'Iyzico::check3D');
 //ödeme sayfası
 $routes->get('/iyzico/payout', 'Iyzico::payout');
 
