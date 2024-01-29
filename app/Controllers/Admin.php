@@ -9,6 +9,7 @@ class Admin extends BaseController
     public function __construct()
     {
         $this->db = db_connect();
+        session();
     }
     public function is_logged_in()
     {

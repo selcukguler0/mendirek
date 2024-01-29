@@ -16,6 +16,7 @@ class Iyzico extends BaseController
     public function __construct()
     {
         $this->db = db_connect();
+        session();
     }
 
     //--------------------------------------------------------------------
@@ -39,38 +40,103 @@ class Iyzico extends BaseController
     //2. Adım - 3DS Başlatma
     public function start3DS()
     {
-        $conversationId = $this->randomConversationId();
+        //kullanıcı
+        $email = session()->get('user');
+        $builder = $this->db->table('users');
+        $builder->where('email', $email);
+        $query = $builder->get();
+        $user = $query->getRow();
+
+        //gelen data
+        $postData = $this->request->getPost();
+        $order_cart = json_decode($postData["order_cart"]);
+
+        $order_total = 0;
+        $books = array();
+        //idlere bakarak databaseden fiyatları çek
+        $builder = $this->db->table('books');
+        foreach ($order_cart as $key => $value) {
+            $builder->where('id', $value->id);
+            $query = $builder->get();
+            $row = $query->getRow();
+            $books[$value->id] = $row;
+            $order_total += $row->price;
+        }
+        $ord_billing_name = $postData["ord_billing_name"];
+        $ord_billing_phone = $postData["ord_billing_phone"];
+        $ord_billing_city = $postData["ord_billing_city"];
+        $ord_billing_town = $postData["ord_billing_town"];
+        $ord_billing_address = $postData["ord_billing_address"];
+        $ord_billing_postalcode = $postData["ord_billing_postalcode"];
+
+        $ord_shipping_note = $postData["ord_shipping_note"];
+
+
+        // $ord_billing_firm_name = $ord_billing_name;
+        // $ord_billing_tax_office = "";
+        // $ord_billing_tax_number = "";
+
+        //varsayılan olarak fatura adresi ile aynı
+        $ord_shipping_name = $ord_billing_name;
+        $ord_shipping_phone = $ord_billing_phone;
+        $ord_shipping_address = $ord_billing_address;
+        $ord_shipping_city = $ord_billing_city;
+        $ord_shipping_town = $ord_billing_town;
+
+        //tc kimlik veya vergi numarası
+        $ord_billing_tax_number = $postData["ord_billing_tax_number"];
+
+        //fatura adresi farklı ise
+        if (!empty($postData["different_address"]) && $postData["different_address"] == "1") {
+            $ord_shipping_name = $postData["ord_shipping_name"];
+            $ord_shipping_phone = $postData["ord_shipping_phone"];
+            $ord_shipping_address = $postData["ord_shipping_address"];
+            $ord_shipping_city = $postData["ord_shipping_city"];
+            $ord_shipping_town = $postData["ord_shipping_town"];
+        }
+
+        //taksit miktarı
+        $installments = !empty($postData["installments"]) ? $postData["installments"] : 1;
+
+        //kart bilgileri
+        $ord_ccowner = $postData["ord_ccowner"];
+        $ord_ccno = $postData["ord_ccno"];
+        $ord_ccexpdate = $postData["ord_ccexpdate"];
+        $ord_cvc = $postData["ord_cvc"];
+        $conversationId = $postData["conversationId"];
+
         $request = new \Iyzipay\Request\CreatePaymentRequest();
         $request->setLocale(\Iyzipay\Model\Locale::TR);
         $request->setConversationId($conversationId);
-        $request->setPrice("1");
-        $request->setPaidPrice("1.2");
+        $request->setPrice($order_total);
+        $request->setPaidPrice($order_total);
         $request->setCurrency(\Iyzipay\Model\Currency::TL);
-        $request->setInstallment(1);
+        $request->setInstallment($installments);
         $request->setBasketId("B67832");
         $request->setPaymentChannel(\Iyzipay\Model\PaymentChannel::WEB);
         $request->setPaymentGroup(\Iyzipay\Model\PaymentGroup::PRODUCT);
         $request->setCallbackUrl(base_url() . "iyzico/check3D");
 
         $paymentCard = new \Iyzipay\Model\PaymentCard();
-        $paymentCard->setCardHolderName("John Doe");
-        $paymentCard->setCardNumber("5528790000000008");
-        $paymentCard->setExpireMonth("12");
-        $paymentCard->setExpireYear("2030");
-        $paymentCard->setCvc("123");
+        $paymentCard->setCardHolderName($ord_ccowner);
+        //sandbox card no: 5528790000000008
+        $paymentCard->setCardNumber($ord_ccno);
+        $paymentCard->setExpireMonth($ord_ccexpdate["m"]);
+        $paymentCard->setExpireYear($ord_ccexpdate["y"]);
+        $paymentCard->setCvc($ord_cvc);
         $paymentCard->setRegisterCard(0);
         $request->setPaymentCard($paymentCard);
 
         $buyer = new \Iyzipay\Model\Buyer();
-        $buyer->setId("BY789");
-        $buyer->setName("John");
-        $buyer->setSurname("Doe");
-        $buyer->setGsmNumber("+905350000000");
-        $buyer->setEmail("email@email.com");
-        $buyer->setIdentityNumber("74300864791");
-        $buyer->setLastLoginDate("2015-10-05 12:43:35");
-        $buyer->setRegistrationDate("2013-04-21 15:12:09");
-        $buyer->setRegistrationAddress("Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1");
+        $buyer->setId($user->id);
+        $buyer->setName($ord_billing_name);
+        $buyer->setSurname($ord_billing_name);
+        $buyer->setGsmNumber($ord_billing_phone);
+        $buyer->setEmail($email);
+        $buyer->setIdentityNumber($ord_billing_tax_number);
+        $buyer->setLastLoginDate(date('Y-m-d H:i:s'));
+        $buyer->setRegistrationDate($user->createdAt);
+        $buyer->setRegistrationAddress($ord_billing_address);
         $buyer->setIp("85.34.78.112");
         $buyer->setCity("Istanbul");
         $buyer->setCountry("Turkey");
@@ -78,52 +144,67 @@ class Iyzico extends BaseController
         $request->setBuyer($buyer);
 
         $shippingAddress = new \Iyzipay\Model\Address();
-        $shippingAddress->setContactName("Jane Doe");
-        $shippingAddress->setCity("Istanbul");
+        $shippingAddress->setContactName($ord_shipping_name);
+        $shippingAddress->setCity($ord_shipping_city);
         $shippingAddress->setCountry("Turkey");
-        $shippingAddress->setAddress("Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1");
-        $shippingAddress->setZipCode("34742");
+        $shippingAddress->setAddress($ord_shipping_address);
+        $shippingAddress->setZipCode("34000");
         $request->setShippingAddress($shippingAddress);
 
         $billingAddress = new \Iyzipay\Model\Address();
-        $billingAddress->setContactName("Jane Doe");
+        $billingAddress->setContactName($ord_billing_name);
         $billingAddress->setCity("Istanbul");
         $billingAddress->setCountry("Turkey");
-        $billingAddress->setAddress("Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1");
-        $billingAddress->setZipCode("34742");
+        $billingAddress->setAddress($ord_billing_address);
+        $shippingAddress->setZipCode("34000");
         $request->setBillingAddress($billingAddress);
 
         $basketItems = array();
-        $firstBasketItem = new \Iyzipay\Model\BasketItem();
-        $firstBasketItem->setId("BI101");
-        $firstBasketItem->setName("Binocular");
-        $firstBasketItem->setCategory1("Collectibles");
-        $firstBasketItem->setCategory2("Accessories");
-        $firstBasketItem->setItemType(\Iyzipay\Model\BasketItemType::PHYSICAL);
-        $firstBasketItem->setPrice("0.3");
-        $basketItems[0] = $firstBasketItem;
-        
+        foreach ($books as $key => $value) {
+            $basketItem = new \Iyzipay\Model\BasketItem();
+            $basketItem->setId($value->id);
+            $basketItem->setName($value->name);
+            $basketItem->setCategory1("Kitap");
+            $basketItem->setItemType(\Iyzipay\Model\BasketItemType::PHYSICAL);
+            $basketItem->setPrice($value->price);
+            $basketItems[] = $basketItem;
+        }
         $request->setBasketItems($basketItems);
 
-        # make request
+        # istek gönderiliyor
         $threedsInitialize = \Iyzipay\Model\ThreedsInitialize::create($request, $this->options());
 
         $response = json_decode($threedsInitialize->getRawResult());
-        # print result
+        # işlem başarılı ise
         if ($response->status == "success") {
-            //threeDSHtmlContent db ye kayıt et
-            $data = [
-                'conversationId' => $conversationId,
-                'threeDSHtmlContent' => $response->threeDSHtmlContent,
-                'basketItems' => json_encode($basketItems),
-                'orderTotal' => "100"
-            ];
-            $builder = $this->db->table('orders');
-            $builder->insert($data);
+            //db ye kayıt et
+            $postData["threeDSHtmlContent"] = $response->threeDSHtmlContent;
+            $postData["conversationId"] = $conversationId;
+            $postData["orderTotal"] = $order_total;
+            $postData["userEmail"] = $email;
+            $postData["basketItems"] = json_encode($books);
 
-            return redirect()->to(base_url() . "iyzico/payout?conversationId=" . $conversationId);
+            //tabloda tutulmayan değerleri sil
+            unset($postData["ord_ccowner"]);
+            unset($postData["ord_ccno"]);
+            unset($postData["ord_ccexpdate"]);
+            unset($postData["ord_cvc"]);
+            unset($postData["order_cart"]);
+            unset($postData["save"]);
+
+            $builder = $this->db->table('orders');
+            $builder->insert($postData);
+
+            return json_encode([
+                "ok" => true,
+                "redirectUrl" => base_url() . "iyzico/payout?conversationId=" . $conversationId,
+            ]);
         }
-        return redirect()->to(base_url());
+        # işlem başarısız ise
+        return json_encode([
+            "ok" => false,
+            "errorMessage" => $response->errorMessage,
+        ]);
     }
     //3. Adım - 2. adımda dönen threeDSHtmlContent base64 decoded olarak iframe içinde gösterilir
     public function payout()
@@ -148,19 +229,37 @@ class Iyzico extends BaseController
     {
         $postData = $this->request->getPost();
 
-        echo json_encode($postData);
+        $builder = $this->db->table('orders');
+        $builder->where('conversationId', $postData["conversationId"]);
         if ($postData["status"] == "success") {
+            $builder->update(['status' => 1]);
             return redirect()->to(base_url() . "iyzico/success");
         }
+        $builder->update(['status' => 0]);
         return redirect()->to(base_url() . "iyzico/fail");
+    }
+
+    //başarılı ödeme sayfası
+    //success
+    public function success()
+    {
+        $data["title"] = "Mendirek Dükkan | Ödeme Başarılı";
+        return view('/iyzico/success', $data);
+    }
+    //başarısız ödeme sayfası
+    //fail
+    public function fail()
+    {
+        $data["title"] = "Mendirek Dükkan | Ödeme Başarısız";
+        return view('/iyzico/fail', $data);
     }
 
     public static function options()
     {
         $options = new \Iyzipay\Options();
-        $options->setApiKey('sandbox-wHTcjZPIjtA6IqUNixph8f2n8vTTmbx0');
-        $options->setSecretKey('sandbox-6UmvawgrQ1RdOShzoHJf9xTDvV0fU0Cb');
-        $options->setBaseUrl('https://sandbox-api.iyzipay.com');
+        $options->setApiKey(getenv("iyzico.apikey"));
+        $options->setSecretKey(getenv("iyzico.secretkey"));
+        $options->setBaseUrl(getenv("iyzico.baseurl"));
 
         return $options;
     }

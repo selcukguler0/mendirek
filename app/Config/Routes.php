@@ -42,6 +42,10 @@ $routes->post('/iyzico/start3DS', 'Iyzico::start3DS');
 $routes->match(["get", "post"],'/iyzico/check3D', 'Iyzico::check3D');
 //ödeme sayfası
 $routes->get('/iyzico/payout', 'Iyzico::payout');
+//başarılı ödeme sonrası
+$routes->get('/iyzico/success', 'Iyzico::success');
+//başarısız ödeme sonrası
+$routes->get('/iyzico/fail', 'Iyzico::fail');
 
 // Admin
 $routes->get('/admin', 'Admin::index');

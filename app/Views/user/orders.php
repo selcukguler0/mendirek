@@ -21,8 +21,8 @@
                                     <meta itemprop="position" content="1">
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-                                    <a itemprop="item" href="?p=Members">
-                                        <span itemprop="name">Hesabım</span>
+                                    <a itemprop="item" href="/orders">
+                                        <span itemprop="name">Siparişlerim</span>
                                     </a>
                                     <meta itemprop="position" content="2">
                                 </li>
@@ -81,7 +81,7 @@
                                                     Yorumlarım
                                                 </option> -->
 
-                                                <option value="?p=Orders">
+                                                <option value="/orders">
                                                     Siparişlerim
                                                 </option>
 
