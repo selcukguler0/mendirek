@@ -37,7 +37,7 @@
                                 <div class="Account-wrapper">
                                     <div class="Account-menu">
                                         <div class="member_nav list-group ">
-                                            <a class="list-group-item list-group-item-action user_menu_mmb  active" href="/hesabim">Üyelik Bilgilerim</a>
+                                            <a class="list-group-item list-group-item-action user_menu_mmb " href="/hesabim">Üyelik Bilgilerim</a>
 
                                             <!-- <a class="list-group-item list-group-item-action user_menu_pref " href="">Tercihlerim</a> -->
 
@@ -48,7 +48,7 @@
                                             <!-- <a class="list-group-item list-group-item-action user_menu_comments " href="">Yorumlarım</a> -->
 
 
-                                            <a class="list-group-item list-group-item-action user_menu_orders " href="/orders">Siparişlerim</a>
+                                            <a class="list-group-item list-group-item-action user_menu_orders active" href="/orders">Siparişlerim</a>
 
                                             <a class="list-group-item list-group-item-action user_menu_cart " href="/card">Sepetim</a>
 
@@ -61,8 +61,8 @@
                                         </div>
 
                                         <div class="member_nav_mobile">
-                                            <select onchange="selectMemberMenu(this)" class="form-control">
-                                                <option selected="" value="?p=Members">
+                                            <select class="form-control" style="max-width:90%">
+                                                <option selected="" value="/hesabim">
                                                     Üyelik Bilgilerim
                                                 </option>
                                                 <!-- <option value="?p=MemberPreferences">
@@ -81,7 +81,7 @@
                                                     Yorumlarım
                                                 </option> -->
 
-                                                <option value="/orders">
+                                                <option selected value="/orders">
                                                     Siparişlerim
                                                 </option>
 
@@ -109,46 +109,52 @@
 
                                     <div class="Account-content">
                                         <h1 class="contentHeader mmbViewHeader">
-                                            Üyelik Bilgilerim
+                                            Siparişlerim
                                         </h1>
-
-                                        <div class="view_table members_view_table">
-                                            <div class="view_table_item">
-                                                <label>Üye No : </label>
-                                                <span> <?php echo $user['id'] ?> </span>
+                                        <?php //sipariş yoksa 
+                                        ?>
+                                        <?php if (count($orders) <= 0) : ?>
+                                            <div class="alert alert-warning" role="alert">
+                                                Henüz siparişiniz bulunmamaktadır.
                                             </div>
+                                            <?php //sipariş varsa 
+                                            ?>
+                                        <?php else : ?>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover table-striped table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sipariş No</th>
+                                                                    <th>Sipariş Tarihi</th>
+                                                                    <th>Toplam Tutar</th>
+                                                                    <th>Durum</th>
+                                                                    <th>Sipariş İçeriği</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <?php foreach ($orders as $order) : ?>
 
-                                            <div class="view_table_item">
-                                                <label>Ad soyad : </label>
-                                                <span><?php echo $user['fullname'] ?></span>
-                                            </div>
+                                                                    <tr>
+                                                                        <td><?php echo $order["id"]; ?></td>
+                                                                        <td><?php echo $order["created_at"]; ?></td>
+                                                                        <td><?php echo $order["orderTotal"]; ?>₺</td>
+                                                                        <td><?php echo $order["status"]; ?></td>
+                                                                        <td><a href="/order-details/<?php echo $order["id"]; ?>">Detay</a></td>
+                                                                    </tr>
+                                                                <?php endforeach; ?>
 
-                                            <div class="view_table_item">
-                                                <label>Email Adresi : </label>
-                                                <span><?php echo $user['email'] ?> <a href="?p=MemberPassword&amp;t=email_change" class="btn btn-light btn-sm ml-2">Değiştir</a></span>
-                                            </div>
-
-                                            <div class="view_table_item">
-                                                <label>Şifre : </label>
-                                                <span>****** <a href="?p=MemberPassword" class="btn btn-light btn-sm ml-2">Değiştir</a> </span>
-                                            </div>
-
-                                            <div class="view_table_item">
-                                                <button data-toggle="collapse" data-target="#collapse1" class="btn btn-danger">Üyeliğimi Sil</button>
-                                                <div class="collapse py-3 my-3" id="collapse1">
-                                                    Üyeliğinizi sildiğinizde üyeliğinizle ilişkili tüm veriler geri döndürülemez şekilde veritabanımızdan silinecektir.
-                                                    <form class="py-3" action="?p=Members" method="POST">
-                                                        <button class="btn btn-secondary" value="1" type="submit" name="delete_my_account">Devam</button>
-                                                    </form>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        <?php endif; ?>
                                     </div>
+
                                 </div>
                             </div>
-
-                        </div>
-                    </div>
 
 
                 </main>
@@ -158,6 +164,13 @@
 
     <?php echo view('layouts/footer'); ?>
 
+    <script>
+        const mobile_navigation =document.querySelector(".member_nav_mobile select");
+
+        mobile_navigation.addEventListener("change", function() {
+            window.location.href = this.value;
+        });
+    </script>
 
 </body>
 

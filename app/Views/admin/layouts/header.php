@@ -29,6 +29,8 @@
                 </li>
                 <li><a href="/admin/news"><span>Bülten Ekle/Düzenle</span></a>
                 </li>
+                <li><a href="/admin/orders"><span>Sipariş Takibi</span></a>
+                </li>
             </ul>
 
         </div>

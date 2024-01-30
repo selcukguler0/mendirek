@@ -61,8 +61,8 @@
                                         </div>
 
                                         <div class="member_nav_mobile">
-                                            <select onchange="selectMemberMenu(this)" class="form-control">
-                                                <option selected="" value="?p=Members">
+                                            <select class="form-control">
+                                                <option selected value="/hesabim">
                                                     Üyelik Bilgilerim
                                                 </option>
                                                 <!-- <option value="?p=MemberPreferences">
@@ -81,7 +81,7 @@
                                                     Yorumlarım
                                                 </option> -->
 
-                                                <option value="?p=Orders">
+                                                <option value="/orders">
                                                     Siparişlerim
                                                 </option>
 
@@ -158,7 +158,13 @@
 
     <?php echo view('layouts/footer'); ?>
 
+    <script>
+        const mobile_navigation = document.querySelector(".member_nav_mobile select");
 
+        mobile_navigation.addEventListener("change", function() {
+            window.location.href = this.value;
+        });
+    </script>
 </body>
 
 </html>

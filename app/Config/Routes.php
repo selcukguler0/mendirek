@@ -30,7 +30,9 @@ $routes->get('/logout', 'User::logout');
 $routes->get('/verify-mail', 'User::verify_mail');
 $routes->get('/hesabim', 'User::hesabim');
 $routes->get('/card', 'User::card');
-$routes->match(["get", "post"],'/checkout', 'User::checkout');
+$routes->match(["get", "post"], '/checkout', 'User::checkout');
+$routes->get("/orders", "User::orders");
+$routes->get("/order-details/(:any)", "User::order_details/$1");
 
 // Api
 $routes->get('/api/loadtowns/(:any)', 'Api::loadTowns/$1');
@@ -39,7 +41,7 @@ $routes->get('/api/loadtowns/(:any)', 'Api::loadTowns/$1');
 // $routes->post('/iyzico/pay', 'Iyzico::payWithIyzico');
 $routes->post('/iyzico/bincontrol', 'Iyzico::binControl');
 $routes->post('/iyzico/start3DS', 'Iyzico::start3DS');
-$routes->match(["get", "post"],'/iyzico/check3D', 'Iyzico::check3D');
+$routes->match(["get", "post"], '/iyzico/check3D', 'Iyzico::check3D');
 //ödeme sayfası
 $routes->get('/iyzico/payout', 'Iyzico::payout');
 //başarılı ödeme sonrası
@@ -55,6 +57,9 @@ $routes->match(['get', 'post'], '/admin/addbook', 'Admin::addbook');
 $routes->post('/admin/deletebook', 'Admin::deletebook');
 $routes->match(['get', 'post'], '/admin/login', 'Admin::login');
 $routes->get('/admin/logout', 'Admin::logout');
+$routes->get('/admin/orders', 'Admin::orders');
+$routes->get( '/admin/order-details/(:any)', 'Admin::order_details/$1');
+$routes->post('/admin/order-details', 'Admin::order_details/$1');
 //--news
 $routes->get('/admin/news', 'Admin::news');
 $routes->get('/admin/editnews/(:any)', 'Admin::editnews/$1');

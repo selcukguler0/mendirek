@@ -35,7 +35,10 @@
                     <div id="layout_style" class="container layout_010">
                         <div class="main_content">
                             <div class="Box Box--form Sign">
-
+                                <?php if (!empty($error)) {
+                                    echo '<div class="alert alert-danger">' . $error . '</div>';
+                                } ?>
+                                
                                 <h1 class="contentHeader pageViewHeader">Üyelik işlemleri</h1>
 
                                 <div class="Sign-wrapper">

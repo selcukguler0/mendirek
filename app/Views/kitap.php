@@ -156,7 +156,13 @@
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_origname">
                                             <div class="prd_fields_label">Kategori:</div>
                                             <div class="prd_fields_text">
-                                                <a href="/kitaplar/<?php echo strtolower($book->category); ?>"> <?php echo $book->category; ?> </a>
+                                                <a href="/kitaplar/<?php echo strtolower($book->category); ?>">
+                                                    <?php if ($book->category == "cok_satan") {
+                                                        echo "Çok Satanlar";
+                                                    } else {
+                                                        echo $book->category;
+                                                    } ?>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -294,7 +300,7 @@
     <?php echo view('layouts/footer-mail'); ?>
     <?php echo view('layouts/footer'); ?>
 
-    
+
     <script>
         new Swiper(".otherBooksSwiper", {
             grabCursor: false,

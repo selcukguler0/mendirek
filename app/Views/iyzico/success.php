@@ -17,7 +17,7 @@
                                 <div class="container">
                                     <div class="alert alert-success">
                                         Ödeme başarıyla gerçekleşti. <br>
-                                        <a href="/user/orders">Siparişinizi, siparişler sayfasından takip edebilirsiniz.</a>
+                                        <a href="/orders">Siparişinizi, siparişler sayfasından takip edebilirsiniz.</a>
                                     </div>
                                 </div>
                             </div>

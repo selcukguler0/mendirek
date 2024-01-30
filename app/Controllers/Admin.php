@@ -58,20 +58,20 @@ class Admin extends BaseController
                 'page' => $this->request->getPost('page'),
                 'category' => $this->request->getPost('category'),
             ];
-    
+
             $file = $this->request->getFile('fileInput');
-    
+
             if ($file->isValid() && !$file->hasMoved()) {
                 $newName = md5(uniqid()) . "." . $file->getExtension();
-    
+
                 $file->move(FCPATH  . 'img/books', $newName);
-    
+
                 $data['img'] = $newName;
             }
-    
+
             $id = $this->request->getPost('id');
             $builder = $this->db->table('books');
-    
+
             $builder->where('id', $id);
             $builder->update($data);
             return redirect()->to(base_url() . "/admin/editbook/" . $id . "?success");
@@ -79,7 +79,7 @@ class Admin extends BaseController
         if (isset($_GET["success"])) {
             $data["success"] = $_GET["success"];
         }
-        
+
         $query = $this->db->query("SELECT name FROM authors");
         $data["authors"] = $query->getResult();
 
@@ -87,7 +87,7 @@ class Admin extends BaseController
         $data["book"] = $query->getResultArray()[0];
 
         $data["title"] = "Mendirek Dükkan | Admin";
-        
+
         return view('admin/editbook', $data);
     }
     public function addbook()
@@ -157,7 +157,8 @@ class Admin extends BaseController
 
         return redirect()->to(base_url() . 'admin?deleted=' . $name);
     }
-    public function news(){
+    public function news()
+    {
         if (!$this->is_logged_in()) {
             return redirect()->to(base_url() . 'admin/login');
         }
@@ -176,7 +177,8 @@ class Admin extends BaseController
 
         return view('admin/news', $data);
     }
-    public function addnews(){
+    public function addnews()
+    {
         if (!$this->is_logged_in()) {
             return redirect()->to(base_url() . 'admin/login');
         }
@@ -207,7 +209,8 @@ class Admin extends BaseController
         $data["title"] = "Mendirek Dükkan | Admin";
         return view('admin/addnews', $data);
     }
-    public function editnews($id){
+    public function editnews($id)
+    {
         if (!$this->is_logged_in()) {
             return redirect()->to(base_url() . 'admin/login');
         }
@@ -238,12 +241,12 @@ class Admin extends BaseController
         if (isset($_GET["success"])) {
             $data["success"] = $_GET["success"];
         }
-        
+
         $query = $this->db->query("SELECT * FROM news where id = ?", [$this->db->escapeString($id)]);
         $data["news"] = $query->getRow();
 
         $data["title"] = "Mendirek Dükkan | Admin";
-        
+
         return view('admin/editnews', $data);
     }
     public function deletenews()
@@ -262,6 +265,59 @@ class Admin extends BaseController
 
         return redirect()->to(base_url() . 'admin/news?deleted=' . $title);
     }
+    public function orders()
+    {
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'admin/login');
+        }
+        //ödemesi tamamlanmış siparişleri al
+        $query = $this->db->query("SELECT * FROM orders where paid=1");
+        $data["orders"] = $query->getResultArray();
+        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["user"] = session()->get('admin');
+
+        if (isset($_GET["success"])) {
+            $data["success"] = $_GET["success"];
+        }
+
+        if (isset($_GET["deleted"])) {
+            $data["deleted"] = $_GET["deleted"];
+        }
+
+        return view('admin/orders', $data);
+    }
+    public function order_details($id)
+    {
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'admin/login');
+        }
+        if ($this->request->is("post")) {
+            $data_id = $this->request->getPost('id');
+            $data = [
+                'status' => $this->request->getPost('status'),
+            ];
+            $builder = $this->db->table('orders');
+
+            $builder->where('id', $data_id);
+            $builder->update($data);
+            return redirect()->to(base_url() . "admin/order-details/" . $data_id . "?success=Güncellememe başarılı.");
+        }
+
+        $builder = $this->db->table('orders');
+        $builder->where('id', $id);
+        $query = $builder->get();
+        //sipariş yoksa siparişler sayfasına yönlendir
+        if (count($query->getResultArray()) <= 0) {
+            return redirect()->to(base_url() . 'admin/orders');
+        }
+        $order = $query->getResultArray()[0];
+
+        $data["basketItems"] = json_decode($order["basketItems"], true);
+        $data["order"] = $order;
+
+        $data["title"] = "Mendirek Dükkan | Sipariş Detayı";
+        return view('admin/order-details', $data);
+    }
     public function login()
     {
         if ($this->request->is("post")) {
@@ -269,14 +325,14 @@ class Admin extends BaseController
                 'username' => $this->request->getPost('username'),
                 'password' => $this->request->getPost('password'),
             ];
-    
+
             // Check if user exists
             $builder = $this->db->table('admins');
             $builder->where('username', $data["username"]);
             $query = $builder->get();
-    
+
             $users = $query->getResultArray();
-    
+
             if (!empty($users)) {
                 //verify password
                 $user = $users[0];
@@ -285,18 +341,18 @@ class Admin extends BaseController
                     $data["error"] = "Kullanıcı adı veya şifre yanlış!";
                     return view('admin/login', $data);
                 }
-    
+
                 // Create session
                 $session = session();
                 $session->set('admin', $user["username"]);
-    
+
                 return redirect()->to(base_url() . 'admin');
             } else {
                 // User not found
                 $data["title"] = "Mendirek Dükkan | Admin Girişi";
                 $data["error"] = "Kullanıcı adı veya şifre yanlış!";
             }
-    
+
             return view('admin/login', $data);
         }
         $data["title"] = "Mendirek Dükkan | Admin Girişi";

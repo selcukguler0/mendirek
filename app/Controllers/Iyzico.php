@@ -232,10 +232,11 @@ class Iyzico extends BaseController
         $builder = $this->db->table('orders');
         $builder->where('conversationId', $postData["conversationId"]);
         if ($postData["status"] == "success") {
-            $builder->update(['status' => 1]);
+            $builder->update(['paid' => 1]);
+            $builder->update(['status' => "Siparişiniz alındı"]);
             return redirect()->to(base_url() . "iyzico/success");
         }
-        $builder->update(['status' => 0]);
+        $builder->update(['paid' => 0]);
         return redirect()->to(base_url() . "iyzico/fail");
     }
 

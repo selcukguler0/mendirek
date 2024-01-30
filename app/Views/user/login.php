@@ -32,6 +32,9 @@
                         <div class="main_content">
                             <div class="Box Box--form Login">
                                 <div class="Box-content">
+                                    <?php if (!empty($error)) {
+                                        echo '<div class="alert alert-danger">' . $error . '</div>';
+                                    } ?>
                                     <form name="form1" method="post" action="/login">
                                         <?= csrf_field(); ?>
                                         <div class="Login-form form_table">

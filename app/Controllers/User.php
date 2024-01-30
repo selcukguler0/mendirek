@@ -45,9 +45,9 @@ class User extends BaseController
     //card sayfası sonrası bilgilerin doldurulduğu sayfa -- /checkout
     public function checkout()
     {
-        //session yoksa card sayfasına yönlendir
+        //session yoksa login sayfasına yönlendir
         if (!$this->is_logged_in()) {
-            return redirect()->to(base_url() . 'card');
+            return redirect()->to(base_url() . '/login');
         }
         //tüm şehirleri cities tablosundan çek
         $query = $this->db->query("SELECT * FROM cities");
@@ -56,12 +56,52 @@ class User extends BaseController
         $data["title"] = "Mendirek Dükkan | Ödeme";
         return view('user/checkout', $data);
     }
+    //siparişler sayfası
+    //  /orders
+    public function orders()
+    {
+        //session yoksa login sayfasına yönlendir
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'login');
+        }
+        $email = session()->get('user');
+        $builder = $this->db->table('orders');
+        $builder->where('userEmail', $email);
+        $builder->where('paid', 1);
+        $builder->orderBy('created_at', 'DESC');
+        $query = $builder->get();
+        $data["orders"] = $query->getResultArray();
+
+        $data["title"] = "Mendirek Dükkan | Siparişlerim";
+        return view('user/orders', $data);
+    }
+    //sipariş detay sayfası
+    //  /order-details/{id}
+    public function order_details($id)
+    {
+        //session yoksa card sayfasına yönlendir
+        if (!$this->is_logged_in()) {
+            return redirect()->to(base_url() . 'card');
+        }
+        $builder = $this->db->table('orders');
+        $builder->where('id', $id);
+        $query = $builder->get();
+        //sipariş yoksa siparişler sayfasına yönlendir
+        if (count($query->getResultArray()) <= 0    ) {
+            return redirect()->to(base_url() . 'orders');
+        }
+        $order = $query->getResultArray()[0];
+
+        $data["basketItems"] = json_decode($order["basketItems"], true);
+
+        $data["title"] = "Mendirek Dükkan | Sipariş Detayı";
+        return view('user/order-details', $data);
+    }
 
     // LOGIN - REGISTER - FORGOT PASS - VERIFY MAIL - LOGOUT
     public function login()
     {
         if ($this->request->is("post")) {
-            echo 'post';
             $data = [
                 'email' => $this->request->getPost('email'),
                 'password' => $this->request->getPost('password'),
@@ -74,7 +114,6 @@ class User extends BaseController
 
             //kullanıcı varsa
             if (!empty($users)) {
-                echo 'user found';
                 //verify password
                 $user = $users[0];
                 echo 'password verify: ' . password_hash(strval($data['password']), PASSWORD_DEFAULT);
@@ -89,7 +128,6 @@ class User extends BaseController
             }
             //kullanıcı yoksa
             else {
-                echo 'user not found';
                 $data["error"] = "Bu e-posta adresi ile herhangi bir kullanıcı bulunamadı!";
             }
         }
@@ -101,7 +139,6 @@ class User extends BaseController
     {
         $data["validation"] = $this->validator;
         if ($this->request->is("post")) {
-            echo 'post';
             $data = [
                 'fullname' => $this->request->getPost('fullname'),
                 'email' => $this->request->getPost('email'),
@@ -114,13 +151,10 @@ class User extends BaseController
             ];
             //doğrulama geçersizse
             if (!$this->validate('register')) {
-                echo 'validation failed';
-                echo json_encode($this->validator->listErrors());
                 $data['validation'] = $this->validator;
             }
             //doğrulama başarılıysa
             else {
-                echo 'validation success';
                 // Check if user exists
                 $query = $this->db->query("SELECT * FROM users WHERE email = '" . $data["email"] . "'");
 
@@ -146,7 +180,6 @@ class User extends BaseController
                 }
                 //kullanıcı varsa
                 else {
-                    echo 'user found';
                     $data["error"] = "Bu e-posta adresi ile daha önce kayıt olunmuş!";
                 }
             }
