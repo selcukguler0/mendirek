@@ -69,6 +69,6 @@ $routes->match(['get', 'post'], '/admin/addnews', 'Admin::addnews');
 
 // 404
 $routes->set404Override(function () {
-    $data["title"] = "Mendirek Dükkan | 404";
+    $data["title"] = "Lolla Yayınları | 404";
     return view('errors/404', $data);
 });

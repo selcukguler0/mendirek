@@ -20,7 +20,7 @@ class Home extends BaseController
         $data["featured"] = array_slice($books, 0, 15);
         $data["populer"] = array_slice($books, 15, 30);
         $data["most_sales"] = array_slice($books, 30, count($books));
-        $data["title"] = "Mendirek Dükkan | Ana Sayfa";
+        $data["title"] = "Lolla Yayınları | Ana Sayfa";
 
         $data["mainslider"] = [
             ["img" => "/slides/1.jpg", "url" => "/yazar/9"],
@@ -35,12 +35,12 @@ class Home extends BaseController
     }
     public function hakkimizda(): string
     {
-        $data["title"] = "Mendirek Dükkan | Hakkımızda";
+        $data["title"] = "Lolla Yayınları | Hakkımızda";
         return view('hakkimizda', $data);
     }
     public function iletisim(): string
     {
-        $data["title"] = "Mendirek Dükkan | İletişim";
+        $data["title"] = "Lolla Yayınları | İletişim";
         return view('iletisim', $data);
     }
     public function search(): string
@@ -54,7 +54,7 @@ class Home extends BaseController
 
         $data["search_query"] = $search_query;
         $data["books"] = $books;
-        $data["title"] = "Mendirek Dükkan | Arama Sonuçları";
+        $data["title"] = "Lolla Yayınları | Arama Sonuçları";
 
         return view('search', $data);
     }
@@ -78,7 +78,7 @@ class Home extends BaseController
         }
 
         $data["authors"] = $groupedAuthors;
-        $data["title"] = "Mendirek Dükkan | Yazarlar";
+        $data["title"] = "Lolla Yayınları | Yazarlar";
 
         return view('yazarlar', $data);
     }
@@ -90,7 +90,7 @@ class Home extends BaseController
 
         $data["authors"] = $authors;
         $data["letter"] = $firstLetter;
-        $data["title"] = "Mendirek Dükkan | Yazarlar - " . $firstLetter;
+        $data["title"] = "Lolla Yayınları | Yazarlar - " . $firstLetter;
 
         return view('yazarlar_grup', $data);
     }
@@ -106,7 +106,7 @@ class Home extends BaseController
 
         $data["authors"] = $authors;
         $data["letter"] = "";
-        $data["title"] = "Mendirek Dükkan | Yazarlar - " . $name;
+        $data["title"] = "Lolla Yayınları | Yazarlar - " . $name;
 
         return view('yazarlar_grup', $data);
     }
@@ -124,12 +124,12 @@ class Home extends BaseController
 
         $data["books"] = $books;
         $data["author"] = $author;
-        $data["title"] = "Mendirek Dükkan | Yazar";
+        $data["title"] = "Lolla Yayınları | Yazar";
         return view("yazar", $data);
     }
     public function lolla_kids(): string
     {
-        $data["title"] = "Mendirek Dükkan | Lolla Kids";
+        $data["title"] = "Lolla Yayınları | Lolla Kids";
         return view("lolla_kids", $data);
     }
     //kategori
@@ -145,12 +145,12 @@ class Home extends BaseController
         $data["books"] = $books;
         $data["filter"] = $filter;
         if ($filter == "kampanya") {
-            $data["title"] = "Mendirek Dükkan | Kampanya";
+            $data["title"] = "Lolla Yayınları | Kampanya";
             $data["header"] = "Kampanyalı ürünler";
             $data["breadcrumb"] = "Kampanya";
             $data["empty_message"] = "Kampanyalı ürün bulunamadı.";
         } else if ($filter == "cok_satan") {
-            $data["title"] = "Mendirek Dükkan | Çok Satanlar";
+            $data["title"] = "Lolla Yayınları | Çok Satanlar";
             $data["header"] = "Çok Satan ürünler";
             $data["breadcrumb"] = "Çok Satanlar";
             $data["empty_message"] = "Çok Satan kategorisinde ürün bulunamadı.";
@@ -174,7 +174,7 @@ class Home extends BaseController
         $data["author_id"] = $book->author_id;
         $query2 = $this->db->query('SELECT * FROM books WHERE author = "' . $book->author . '" AND id != ' . $this->db->escapeString($id) . ' ORDER BY RAND() LIMIT 10');
         $data["books"] = $query2->getResult();
-        $data["title"] = "Mendirek Dükkan | " . $book->name;
+        $data["title"] = "Lolla Yayınları | " . $book->name;
 
         // return json_encode($data);
         return view("kitap", $data);
@@ -184,7 +184,7 @@ class Home extends BaseController
         $query = $this->db->query('SELECT * FROM news ORDER BY createdAt DESC');
         $news = $query->getResult();
         $data["news"] = $news;
-        $data["title"] = "Mendirek Dükkan | Bülten";
+        $data["title"] = "Lolla Yayınları | Bülten";
         $data["empty_message"] = "Bülten bulunamadı.";
         $data["header"] = "Bülten";
         return view("bultenler", $data);
@@ -197,7 +197,7 @@ class Home extends BaseController
             return show_404();
         }
         $data["new"] = $new;
-        $data["title"] = "Mendirek Dükkan | " . $new->title;
+        $data["title"] = "Lolla Yayınları | " . $new->title;
         return view("bulten", $data);
     }
 }

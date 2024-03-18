@@ -4,16 +4,16 @@
         <div class="Footer-wrapper">
             <div class="Footer-content">
                 <div class="Footer-content-logo">
-                    <a href="/"><img src="/img/logo.png" alt="Mendirek Dükkan" draggable="false"></a>
+                    <a href="/"><img src="/img/logo.png" alt="Lolla Yayınları" draggable="false"></a>
                 </div>
                 <div class="Footer-content-info">
-                    <span class="firm_title">Mendirek Dükkan</span>
+                    <span class="firm_title">Lolla Yayınları</span>
                     <span class="firm_address">Maltepe Mah. Davutpaşa Cad No: 83 Zeytinburnu/İstanbul</span>
                     <span class="firm_phone">
                         <a href="tel:02125016770">0212 501 67 70</a></span> 
                         <span class="firm_phone">
-                        <a href="mailto:info@mendirekdukkan.com">info@mendirekdukkan.com</a></span>
-                    <span>© 2023 Mendirek Dükkan</span>
+                        <a href="mailto:info@lollayayinlari.com">info@lollayayinlari.com</a></span>
+                    <span>© 2023 Lolla Yayınları</span>
                 </div>
                 <div class="Footer-content-social">
                     <ul>

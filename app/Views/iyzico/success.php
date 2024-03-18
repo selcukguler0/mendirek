@@ -17,7 +17,9 @@
                                 <div class="container">
                                     <div class="alert alert-success">
                                         Ödeme başarıyla gerçekleşti. <br>
-                                        <a href="/orders">Siparişinizi, siparişler sayfasından takip edebilirsiniz.</a>
+                                        <?php if ($is_logged_in) : ?>
+                                            <a href="/orders">Siparişinizi, siparişler sayfasından takip edebilirsiniz.</a>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>

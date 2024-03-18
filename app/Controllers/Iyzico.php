@@ -18,6 +18,15 @@ class Iyzico extends BaseController
         $this->db = db_connect();
         session();
     }
+    public function is_logged_in()
+    {
+        $session = session();
+        if ($session->get('user') == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     //--------------------------------------------------------------------
     //1. Adım - Taksit ve BIN Sorgulama
@@ -41,12 +50,20 @@ class Iyzico extends BaseController
     public function start3DS()
     {
         //kullanıcı
+        $user = null;
         $email = session()->get('user');
-        $builder = $this->db->table('users');
-        $builder->where('email', $email);
-        $query = $builder->get();
-        $user = $query->getRow();
-
+        if ($email != null) {
+            $builder = $this->db->table('users');
+            $builder->where('email', $email);
+            $query = $builder->get();
+            $user = $query->getRow();
+        } else {
+            $email = "misafirkullanici@lollashop.com";
+            $user = (object) [
+                "id" => 0,
+                "createdAt" => date('Y-m-d H:i:s'),
+            ];
+        }
         //gelen data
         $postData = $this->request->getPost();
         $order_cart = json_decode($postData["order_cart"]);
@@ -219,7 +236,7 @@ class Iyzico extends BaseController
         $decodedString = base64_decode(strval($threeDSHtmlContent));
 
         echo $decodedString;
-        $data["title"] = "Mendirek Dükkan | Ödeme";
+        $data["title"] = "Lolla Yayınları | Ödeme";
         $data["threeDSHtmlContent"] = $decodedString;
         return view('/iyzico/payout', $data);
     }
@@ -244,14 +261,15 @@ class Iyzico extends BaseController
     //success
     public function success()
     {
-        $data["title"] = "Mendirek Dükkan | Ödeme Başarılı";
+        $data["title"] = "Lolla Yayınları | Ödeme Başarılı";
+        $data["is_logged_in"] = $this->is_logged_in();
         return view('/iyzico/success', $data);
     }
     //başarısız ödeme sayfası
     //fail
     public function fail()
     {
-        $data["title"] = "Mendirek Dükkan | Ödeme Başarısız";
+        $data["title"] = "Lolla Yayınları | Ödeme Başarısız";
         return view('/iyzico/fail', $data);
     }
 

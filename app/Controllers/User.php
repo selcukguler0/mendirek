@@ -29,13 +29,13 @@ class User extends BaseController
         $query = $this->db->query("SELECT * FROM users WHERE email = '{$email}'");
         $data["user"] = $query->getResultArray()[0];
         
-        $data["title"] = "Mendirek Dükkan | Hesabım";
+        $data["title"] = "Lolla Yayınları | Hesabım";
         return view('user/hesabim', $data);
     }
 
     public function card()
     {
-        $data["title"] = "Mendirek Dükkan | Sepetim";
+        $data["title"] = "Lolla Yayınları | Sepetim";
         helper('cookie');
         $cookie = get_cookie('card');
         $data["card"] = json_decode($cookie, true);
@@ -46,14 +46,16 @@ class User extends BaseController
     public function checkout()
     {
         //session yoksa login sayfasına yönlendir
-        if (!$this->is_logged_in()) {
+        //18.03.2024 güncelleme - misafirlerde ödeme yapabilsin diye
+        /*if (!$this->is_logged_in()) {
             return redirect()->to(base_url() . '/login');
-        }
+        }*/
+        
         //tüm şehirleri cities tablosundan çek
         $query = $this->db->query("SELECT * FROM cities");
         $data["cities"] = $query->getResultArray();
 
-        $data["title"] = "Mendirek Dükkan | Ödeme";
+        $data["title"] = "Lolla Yayınları | Ödeme";
         return view('user/checkout', $data);
     }
     //siparişler sayfası
@@ -72,7 +74,7 @@ class User extends BaseController
         $query = $builder->get();
         $data["orders"] = $query->getResultArray();
 
-        $data["title"] = "Mendirek Dükkan | Siparişlerim";
+        $data["title"] = "Lolla Yayınları | Siparişlerim";
         return view('user/orders', $data);
     }
     //sipariş detay sayfası
@@ -94,7 +96,7 @@ class User extends BaseController
 
         $data["basketItems"] = json_decode($order["basketItems"], true);
 
-        $data["title"] = "Mendirek Dükkan | Sipariş Detayı";
+        $data["title"] = "Lolla Yayınları | Sipariş Detayı";
         return view('user/order-details', $data);
     }
 
@@ -131,7 +133,7 @@ class User extends BaseController
                 $data["error"] = "Bu e-posta adresi ile herhangi bir kullanıcı bulunamadı!";
             }
         }
-        $data["title"] = "Mendirek Dükkan | Üye Girişi";
+        $data["title"] = "Lolla Yayınları | Üye Girişi";
 
         return view('user/login', $data);
     }
@@ -184,7 +186,7 @@ class User extends BaseController
                 }
             }
         }
-        $data["title"] = "Mendirek Dükkan | Üye Ol";
+        $data["title"] = "Lolla Yayınları | Üye Ol";
 
         return view('user/register', $data);
     }
@@ -214,7 +216,7 @@ class User extends BaseController
                 $data["error"] = "E-posta adresi bulunamadı!";
             }
         }
-        $data["title"] = "Mendirek Dükkan | Şifremi Unuttum";
+        $data["title"] = "Lolla Yayınları | Şifremi Unuttum";
 
         return view('user/forgot-pass', $data);
     }
@@ -244,13 +246,13 @@ class User extends BaseController
                 $data["error"] = "E-posta adresi bulunamadı!";
             }
         }
-        $data["title"] = "Mendirek Dükkan | Aktivasyon Kodu";
+        $data["title"] = "Lolla Yayınları | Aktivasyon Kodu";
 
         return view('user/activation-code', $data);
     }
     public function verify_mail()
     {
-        $data["title"] = "Mendirek Dükkan | E-posta Doğrulama";
+        $data["title"] = "Lolla Yayınları | E-posta Doğrulama";
         return view('user/verify-mail', $data);
     }
     public function logout()

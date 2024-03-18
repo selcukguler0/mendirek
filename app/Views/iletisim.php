@@ -45,7 +45,7 @@
                                                 <!-- <div class="cfg_firm_name">Name</div> -->
                                                 <div class="cfg_firm_address"><b>Adres</b>: Maltepe Mah. Davutpaşa Cad No: 83 Zeytinburnu/İstanbul</div>
                                                 <div class="cfg_firm_phone1"><b>Tel</b>: <a href="tel:02125016770">0212 501 67 70</a></div>
-                                                <div class="cfg_firm_email"><b>Email</b>: <a href="mailto:info@mendirekdukkan.com">info@mendirekdukkan.com</a></div>
+                                                <div class="cfg_firm_email"><b>Email</b>: <a href="mailto:info@lollayayinlari.com">info@lollayayinlari.com</a></div>
                                             </div>
                                         </div>
 

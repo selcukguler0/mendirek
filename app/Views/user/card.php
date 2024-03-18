@@ -64,11 +64,11 @@
 
                                 <div name="list_frm" class="list_form mt-3">
                                     <?php if (isset($card) && count($card) > 0) : ?>
-                                        <?php if (!$is_logged_in) : ?>
+                                        <!-- <?php if (!$is_logged_in) : ?>
                                             <div class="alert alert-danger">
                                                 Ödeme yapmak için giriş yapmalısınız.
                                             </div>
-                                        <?php endif; ?>
+                                        <?php endif; ?> -->
                                         <table class="table cart_list_table table-bordered">
                                             <thead class="rsp-hide-538">
                                                 <tr>

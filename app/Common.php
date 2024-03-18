@@ -16,6 +16,6 @@
 
 function show_404()
 {
-    $data["title"] = "Mendirek Dükkan | 404";
+    $data["title"] = "Lolla Yayınları | 404";
     return view('errors/404', $data);
 }

@@ -27,7 +27,7 @@ class Admin extends BaseController
 
         $query = $this->db->query("SELECT * FROM books");
         $data["books"] = $query->getResultArray();
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
         $data["user"] = session()->get('admin');
 
         if (isset($_GET["success"])) {
@@ -86,7 +86,7 @@ class Admin extends BaseController
         $query = $this->db->query("SELECT * FROM books where id = ?", [$this->db->escapeString($id)]);
         $data["book"] = $query->getResultArray()[0];
 
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
 
         return view('admin/editbook', $data);
     }
@@ -138,7 +138,7 @@ class Admin extends BaseController
         $query = $this->db->query("SELECT name FROM authors");
         $data["authors"] = $query->getResult();
 
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
         return view('admin/addbook', $data);
     }
     public function deletebook()
@@ -165,7 +165,7 @@ class Admin extends BaseController
 
         $query = $this->db->query("SELECT * FROM news");
         $data["news"] = $query->getResultArray();
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
         $data["user"] = session()->get('admin');
 
         if (isset($_GET["success"])) {
@@ -206,7 +206,7 @@ class Admin extends BaseController
             return redirect()->to(base_url() . 'admin/addnews?success=' . $data["title"]);
         }
 
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
         return view('admin/addnews', $data);
     }
     public function editnews($id)
@@ -245,7 +245,7 @@ class Admin extends BaseController
         $query = $this->db->query("SELECT * FROM news where id = ?", [$this->db->escapeString($id)]);
         $data["news"] = $query->getRow();
 
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
 
         return view('admin/editnews', $data);
     }
@@ -273,7 +273,7 @@ class Admin extends BaseController
         //ödemesi tamamlanmış siparişleri al
         $query = $this->db->query("SELECT * FROM orders where paid=1");
         $data["orders"] = $query->getResultArray();
-        $data["title"] = "Mendirek Dükkan | Admin";
+        $data["title"] = "Lolla Yayınları | Admin";
         $data["user"] = session()->get('admin');
 
         if (isset($_GET["success"])) {
@@ -315,7 +315,7 @@ class Admin extends BaseController
         $data["basketItems"] = json_decode($order["basketItems"], true);
         $data["order"] = $order;
 
-        $data["title"] = "Mendirek Dükkan | Sipariş Detayı";
+        $data["title"] = "Lolla Yayınları | Sipariş Detayı";
         return view('admin/order-details', $data);
     }
     public function login()
@@ -337,7 +337,7 @@ class Admin extends BaseController
                 //verify password
                 $user = $users[0];
                 if (!password_verify(strval($data['password']), $user["password"])) {
-                    $data["title"] = "Mendirek Dükkan | Admin Girişi";
+                    $data["title"] = "Lolla Yayınları | Admin Girişi";
                     $data["error"] = "Kullanıcı adı veya şifre yanlış!";
                     return view('admin/login', $data);
                 }
@@ -349,13 +349,13 @@ class Admin extends BaseController
                 return redirect()->to(base_url() . 'admin');
             } else {
                 // User not found
-                $data["title"] = "Mendirek Dükkan | Admin Girişi";
+                $data["title"] = "Lolla Yayınları | Admin Girişi";
                 $data["error"] = "Kullanıcı adı veya şifre yanlış!";
             }
 
             return view('admin/login', $data);
         }
-        $data["title"] = "Mendirek Dükkan | Admin Girişi";
+        $data["title"] = "Lolla Yayınları | Admin Girişi";
         return view('admin/login', $data);
     }
     public function logout()
