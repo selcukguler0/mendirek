@@ -23,12 +23,8 @@ class Home extends BaseController
         $data["title"] = "Lolla Yayınları | Ana Sayfa";
 
         $data["mainslider"] = [
-            ["img" => "/slides/1.jpg", "url" => "/yazar/9"],
-            ["img" => "/slides/2.jpg", "url" => "/kitap/13"],
-            ["img" => "/slides/3.jpg", "url" => "/kitap/30"],
-            ["img" => "/slides/4.jpg", "url" => "/yazar/19"],
-            ["img" => "/slides/5.jpg", "url" => "/kitap/12"],
-            ["img" => "/slides/6.jpg", "url" => "/kitap/41"],
+            ["img" => "/slides/1.png", "url" => "/kitap/50"],
+            ["img" => "/slides/2.png", "url" => "/kitap/501"],
         ];
 
         return view('home', $data);

@@ -476,7 +476,7 @@ $conversationId = randomConversationId();
                 data[key] = value;
             }
             data["conversationId"] = conversationId;
-            data["installments"] = document.querySelector('input[name="installments"]:checked').value;
+            data["installments"] = document.querySelector('input[name="installments"]:checked')?.value || 1;
 
             $.ajax({
                 url: "/iyzico/start3DS",
