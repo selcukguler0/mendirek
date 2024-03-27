@@ -361,6 +361,7 @@ $conversationId = randomConversationId();
     <?php echo view('layouts/footer'); ?>
 
     <script>
+        const saveButton = document.querySelector('#save');
         const conversationId = "<?php echo $conversationId; ?>"
         let totalPrice = 0;
 
@@ -470,6 +471,8 @@ $conversationId = randomConversationId();
         const form = document.querySelector('.edit_form');
         form.addEventListener("submit", (e) => {
             e.preventDefault();
+            saveButton.disabled = true;
+            saveButton.innerHTML = "Ödeme yapılıyor...";
             const formData = new FormData(form);
             const data = {};
             for (var [key, value] of formData.entries()) {
@@ -492,6 +495,8 @@ $conversationId = randomConversationId();
                     }
                 },
                 error: function() {
+                    saveButton.disabled = false;
+                    saveButton.innerHTML = "Ödeme Yap";
                     alert("Ödeme işlemi başarısız!");
                 }
             });

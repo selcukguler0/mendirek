@@ -72,7 +72,8 @@ function bucket() {
 function addToCart(book) {
   console.log(book);
   const id = book.getAttribute("book-id");
-  const name = book.getAttribute("book-name");
+  // Encode the book name here
+  const name = encodeURIComponent(book.getAttribute("book-name"));
   const price = book.getAttribute("book-price") || 100;
   const image = book.getAttribute("book-img");
   let card = getCard();
@@ -85,7 +86,7 @@ function addToCart(book) {
   if (!card) {
     const book = {
       id,
-      name,
+      name, // This name is now URL encoded
       price,
       image,
       quantity: 1,
@@ -104,7 +105,7 @@ function addToCart(book) {
     }
     cardArray.push({
       id,
-      name,
+      name, // This name is now URL encoded
       price,
       image,
       quantity: 1,
@@ -115,9 +116,10 @@ function addToCart(book) {
   }
 }
 
+
 function getCard() {
   let name = "card" + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
+  let decodedCookie = decodeURIComponent(document.cookie); // This decodes the entire cookie string
   let ca = decodedCookie.split(";");
   for (let i = 0; i < ca.length; i++) {
     let c = ca[i];
@@ -125,6 +127,7 @@ function getCard() {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
+      // Decode each book name or the entire card array here if necessary
       return c.substring(name.length, c.length);
     }
   }
@@ -165,8 +168,9 @@ function updateTotalPrice() {
 }
 
 function setDocumentCookie(cardArray) {
+  const year = new Date().getFullYear() + 2;
   document.cookie =
     "card=" +
     JSON.stringify(cardArray) +
-    ";expires=Thu, 01 Jan 2030 00:00:00 UTC;path=/;";
+    `;expires=Thu, 01 Jan ${year} 00:00:00 UTC;path=/;`;
 }

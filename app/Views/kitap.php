@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_page_count">
                                             <div class="prd_fields_label">Sayfa Sayısı:</div>
-                                            <div class="prd_fields_text">+1000</div>
+                                            <div class="prd_fields_text"><?php echo $book->page; ?></div>
                                         </div>
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_press_loc">
                                             <div class="prd_fields_label">Basım Yeri:</div>
@@ -141,13 +141,13 @@
 
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_cover_type">
                                             <div class="prd_fields_label">Kapak Türü:</div>
-                                            <div class="prd_fields_text">Ciltli</div>
+                                            <div class="prd_fields_text"><?php echo $book->cover; ?></div>
                                         </div>
 
-                                        <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_paper_type">
+                                        <!-- <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_paper_type">
                                             <div class="prd_fields_label">Kağıt Türü:</div>
                                             <div class="prd_fields_text">2. Hamur</div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="prd_fields_item prd_book_fields_item prd_book_fields_item_prd_language">
                                             <div class="prd_fields_label">Dili:</div>

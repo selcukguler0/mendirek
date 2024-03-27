@@ -38,6 +38,8 @@ class User extends BaseController
         $data["title"] = "Lolla Yayınları | Sepetim";
         helper('cookie');
         $cookie = get_cookie('card');
+        //decode cookie
+        $cookie = urldecode($cookie);
         $data["card"] = json_decode($cookie, true);
         $data["is_logged_in"] = $this->is_logged_in();
         return view('user/card', $data);
